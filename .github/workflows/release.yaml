@@ -4,4 +4,4 @@ permissions:
   contents: write
 
 on:
-  wo
+  workflow
