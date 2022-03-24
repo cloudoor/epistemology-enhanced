@@ -3,4 +3,5 @@ name: Release
 permissions:
   contents: write
 
-on
+on:
+  wo
