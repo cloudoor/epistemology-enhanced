@@ -8,4 +8,4 @@ on:
 
 jobs:
   create-release:
-    runs
+    runs-on: ubu
