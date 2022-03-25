@@ -8,4 +8,5 @@ on:
 
 jobs:
   create-release:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
+    
