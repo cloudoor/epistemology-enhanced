@@ -4,4 +4,6 @@ permissions:
   contents: write
 
 on:
-  workflow
+  workflow_dispatch:
+
+j
