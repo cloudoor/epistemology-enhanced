@@ -8,3 +8,4 @@ on:
 
 jobs:
   create-release:
+    runs
