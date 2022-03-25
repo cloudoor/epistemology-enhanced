@@ -6,4 +6,5 @@ permissions:
 on:
   workflow_dispatch:
 
-j
+jobs:
+  c
