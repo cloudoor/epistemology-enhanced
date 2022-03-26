@@ -10,4 +10,4 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkou
+      - uses: actions/checkout@v4
