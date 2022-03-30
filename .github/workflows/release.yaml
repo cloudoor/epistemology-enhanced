@@ -13,4 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: taiki-e/create-gh-release-action@v1
         with:
-          # (optional) Path to chang
+          # (optional) Path to changelog.
+          
