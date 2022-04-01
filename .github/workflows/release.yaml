@@ -15,4 +15,4 @@ jobs:
         with:
           # (optional) Path to changelog.
           changelog: CHANGELOG.md
-          # (required) GitHub token
+          # (required) GitHub token for creati
