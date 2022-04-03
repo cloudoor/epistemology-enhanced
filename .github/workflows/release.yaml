@@ -18,4 +18,4 @@ jobs:
           # (required) GitHub token for creating GitHub Releases.
           token: ${{ secrets.GITHUB_TOKEN }}
 
-  upl
+  upload-asse
