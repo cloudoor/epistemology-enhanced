@@ -20,4 +20,4 @@ jobs:
 
   upload-assets:
     needs: create-release
-  
+    strate
