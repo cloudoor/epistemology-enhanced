@@ -23,4 +23,4 @@ jobs:
     strategy:
       matrix:
         os:
-          - ubuntu
+          - ubuntu-lates
