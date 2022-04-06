@@ -24,4 +24,4 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - maco
+          - macos-latest
