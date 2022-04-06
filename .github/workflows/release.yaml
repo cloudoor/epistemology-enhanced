@@ -23,4 +23,5 @@ jobs:
     strategy:
       matrix:
         os:
-          - ubuntu-lates
+          - ubuntu-latest
+       
