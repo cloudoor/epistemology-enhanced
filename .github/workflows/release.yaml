@@ -25,4 +25,5 @@ jobs:
         os:
           - ubuntu-latest
           - macos-latest
-          - windows-lat
+          - windows-latest
+  
