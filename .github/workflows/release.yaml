@@ -26,4 +26,5 @@ jobs:
           - ubuntu-latest
           - macos-latest
           - windows-latest
-    runs-on: ${{ matrix.o
+    runs-on: ${{ matrix.os }}
+    
