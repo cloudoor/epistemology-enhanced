@@ -29,4 +29,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - uses: taiki-e/upload-rust-b
+      - uses: taiki-e/upload-rust-binary-actio
