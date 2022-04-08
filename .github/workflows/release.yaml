@@ -28,4 +28,4 @@ jobs:
           - windows-latest
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions
+      - uses: actions/ch
