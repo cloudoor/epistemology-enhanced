@@ -31,4 +31,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
-          # (required) Comma-separa
+          # (required) Comma-separated list of
