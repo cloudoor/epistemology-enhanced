@@ -35,4 +35,4 @@ jobs:
           # Note that glob pattern is not supported yet.
           bin: epistemology
           zip: all
-          # (required) GitHub token for uploading assets
+          # (required) GitHub token for uploading assets to GitH
