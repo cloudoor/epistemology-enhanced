@@ -1,3 +1,3 @@
 # v0.4.3
 
-* newline and
+* newline and trim fix
