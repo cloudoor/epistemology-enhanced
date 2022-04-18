@@ -36,4 +36,4 @@ jobs:
           bin: epistemology
           zip: all
           # (required) GitHub token for uploading assets to GitHub Releases.
-          token: 
+          token: ${{ secr
