@@ -1,3 +1,3 @@
 # v0.4.3
 
-* n
+* newline and
