@@ -4,4 +4,6 @@
 
 # v0.4.2
 
-* improved command li
+* improved command line args
+
+# v
