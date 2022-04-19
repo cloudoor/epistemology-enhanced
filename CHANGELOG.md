@@ -4,4 +4,4 @@
 
 # v0.4.2
 
-* imp
+* improved comma
