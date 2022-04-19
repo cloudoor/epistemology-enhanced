@@ -6,4 +6,5 @@
 
 * improved command line args
 
-# v
+# v0.4.1
+
