@@ -4,4 +4,4 @@
 
 # v0.4.2
 
-* improved comma
+* improved command li
