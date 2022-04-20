@@ -10,4 +10,6 @@
 
 * cleanup interface
 * add threads
-* add context window co
+* add context window control
+
+# 
