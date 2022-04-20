@@ -12,4 +12,6 @@
 * add threads
 * add context window control
 
-# v0.4.
+# v0.4.0
+
+* mob
