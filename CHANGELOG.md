@@ -12,4 +12,4 @@
 * add threads
 * add context window control
 
-# 
+# v0.4.
