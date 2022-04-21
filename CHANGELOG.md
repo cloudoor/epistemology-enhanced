@@ -14,4 +14,6 @@
 
 # v0.4.0
 
-* mobile styl
+* mobile styling
+
+# v0.
