@@ -18,4 +18,6 @@
 
 # v0.3.8
 
-* use rus
+* use rustls
+
+# v0
