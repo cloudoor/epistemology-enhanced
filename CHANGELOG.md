@@ -22,4 +22,4 @@
 
 # v0.3.7
 
-* HTTPS with auto ce
+* HTTPS with auto cert ge
