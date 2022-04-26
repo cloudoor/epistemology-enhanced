@@ -22,4 +22,5 @@
 
 # v0.3.7
 
-* HTTPS with auto cert generation by defau
+* HTTPS with auto cert generation by default
+* st
