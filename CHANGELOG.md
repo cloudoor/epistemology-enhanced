@@ -23,4 +23,4 @@
 # v0.3.7
 
 * HTTPS with auto cert generation by default
-* streaming output to
+* streaming output to default fronte
