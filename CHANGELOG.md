@@ -24,4 +24,4 @@
 
 * HTTPS with auto cert generation by default
 * streaming output to default frontend
-* cleaner style and favi
+* cleaner style and favicon of fro
