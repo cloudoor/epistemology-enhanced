@@ -25,4 +25,4 @@
 * HTTPS with auto cert generation by default
 * streaming output to default frontend
 * cleaner style and favicon of frontend
-* support for specifying number of GPU la
+* support for specifying number of GPU layers to 
