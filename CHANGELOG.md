@@ -26,4 +26,4 @@
 * streaming output to default frontend
 * cleaner style and favicon of frontend
 * support for specifying number of GPU layers to offload
-* support for specifying server bindings other 
+* support for specifying server bindings other than loc
