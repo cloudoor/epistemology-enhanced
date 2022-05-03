@@ -28,4 +28,6 @@
 * support for specifying number of GPU layers to offload
 * support for specifying server bindings other than localhost like 0.0.0.0 for local network
 
-# v0.2
+# v0.2.17
+
+* suppo
