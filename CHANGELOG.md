@@ -30,4 +30,5 @@
 
 # v0.2.17
 
-* support for GET/
+* support for GET/POST api
+* 
