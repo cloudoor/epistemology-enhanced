@@ -31,4 +31,4 @@
 # v0.2.17
 
 * support for GET/POST api
-* support f
+* support for JSON 
