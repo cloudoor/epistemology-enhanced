@@ -30,4 +30,4 @@
 
 # v0.2.17
 
-* suppo
+* support for GET/
