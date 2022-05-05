@@ -32,4 +32,4 @@
 
 * support for GET/POST api
 * support for JSON schema
-* support for hosting stati
+* support for hosting static files
