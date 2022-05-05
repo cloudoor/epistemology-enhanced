@@ -31,4 +31,5 @@
 # v0.2.17
 
 * support for GET/POST api
-* support for JSON 
+* support for JSON schema
+* su
