@@ -93,3 +93,9 @@ dependencies = [
  "sha1",
  "smallvec",
  "tokio",
+ "tokio-util",
+ "tracing",
+ "zstd",
+]
+
+[[package]]
