@@ -110,3 +110,12 @@ dependencies = [
 
 [[package]]
 name = "actix-router"
+version = "0.5.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d22475596539443685426b6bdadb926ad0ecaefdfc5fb05e5e3441f15463c511"
+dependencies = [
+ "bytestring",
+ "http 0.2.11",
+ "regex",
+ "serde",
+ "tracing",
