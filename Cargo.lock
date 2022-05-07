@@ -130,3 +130,8 @@ dependencies = [
  "futures-core",
  "tokio",
 ]
+
+[[package]]
+name = "actix-server"
+version = "2.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
