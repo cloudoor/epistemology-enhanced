@@ -168,3 +168,12 @@ dependencies = [
  "actix-rt",
  "actix-service",
  "actix-utils",
+ "futures-core",
+ "impl-more",
+ "pin-project-lite",
+ "tokio",
+ "tokio-rustls",
+ "tokio-util",
+ "tracing",
+ "webpki-roots",
+]
