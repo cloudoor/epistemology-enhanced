@@ -376,3 +376,8 @@ dependencies = [
  "cfg-if",
  "libc",
  "miniz_oxide",
+ "object",
+ "rustc-demangle",
+]
+
+[[package]]
