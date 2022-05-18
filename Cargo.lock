@@ -638,3 +638,11 @@ dependencies = [
  "futures",
  "gbnf",
  "rcgen",
+ "reqwest",
+ "rustls",
+ "rustls-pemfile",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tokio-stream",
+]
