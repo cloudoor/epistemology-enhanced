@@ -790,3 +790,15 @@ dependencies = [
  "futures-core",
  "futures-io",
  "futures-macro",
+ "futures-sink",
+ "futures-task",
+ "memchr",
+ "pin-project-lite",
+ "pin-utils",
+ "slab",
+]
+
+[[package]]
+name = "gbnf"
+version = "0.1.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
