@@ -802,3 +802,14 @@ dependencies = [
 name = "gbnf"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cdf6228362f4014ccbdb75788bb664ab1d2bb4c97fe0b8af13c7e7ea00bc5da4"
+dependencies = [
+ "nom",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "thiserror",
+]
+
+[[package]]
+name = "generic-array"
