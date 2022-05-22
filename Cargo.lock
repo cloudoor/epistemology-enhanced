@@ -820,3 +820,8 @@ dependencies = [
  "typenum",
  "version_check",
 ]
+
+[[package]]
+name = "getrandom"
+version = "0.2.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
