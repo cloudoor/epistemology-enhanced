@@ -870,3 +870,8 @@ dependencies = [
  "futures-sink",
  "http 1.1.0",
  "indexmap",
+ "slab",
+ "tokio",
+ "tokio-util",
+ "tracing",
+]
