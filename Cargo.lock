@@ -992,3 +992,6 @@ dependencies = [
  "tokio-native-tls",
  "tower-service",
 ]
+
+[[package]]
+name = "hyper-util"
