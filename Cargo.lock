@@ -986,3 +986,9 @@ dependencies = [
  "bytes",
  "http-body-util",
  "hyper",
+ "hyper-util",
+ "native-tls",
+ "tokio",
+ "tokio-native-tls",
+ "tower-service",
+]
