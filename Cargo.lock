@@ -1181,3 +1181,10 @@ dependencies = [
  "openssl-probe",
  "openssl-sys",
  "schannel",
+ "security-framework",
+ "security-framework-sys",
+ "tempfile",
+]
+
+[[package]]
+name = "nom"
