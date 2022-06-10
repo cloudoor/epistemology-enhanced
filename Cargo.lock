@@ -1368,3 +1368,13 @@ checksum = "af7cee1a6c8a5b9208b3cb1061f10c0cb689087b3d8ce85fb9d2dd7a29b6ba66"
 dependencies = [
  "diff",
  "yansi",
+]
+
+[[package]]
+name = "proc-macro2"
+version = "1.0.74"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2de98502f212cfcea8d0bb305bd0f49d7ebdd75b64ba0a68f937d888f4e0d6db"
+dependencies = [
+ "unicode-ident",
+]
