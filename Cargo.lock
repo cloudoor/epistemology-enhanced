@@ -1427,3 +1427,7 @@ dependencies = [
  "pem",
  "ring 0.17.7",
  "time",
+ "yasna",
+]
+
+[[package]]
