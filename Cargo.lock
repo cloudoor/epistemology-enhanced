@@ -1520,3 +1520,12 @@ dependencies = [
  "cc",
  "libc",
  "once_cell",
+ "spin 0.5.2",
+ "untrusted 0.7.1",
+ "web-sys",
+ "winapi",
+]
+
+[[package]]
+name = "ring"
+version = "0.17.7"
