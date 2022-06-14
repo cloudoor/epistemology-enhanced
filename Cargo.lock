@@ -1589,3 +1589,9 @@ dependencies = [
  "base64 0.21.5",
  "rustls-pki-types",
 ]
+
+[[package]]
+name = "rustls-pki-types"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9e9d979b3ce68192e42760c7810125eb6cf2ea10efae545a156063e61f314e2a"
