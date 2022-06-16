@@ -1673,3 +1673,14 @@ checksum = "a3385e45322e8f9931410f01b3031ec534c3947d0e94c18049af4d9f9907d4e0"
 dependencies = [
  "proc-macro2",
  "quote",
+ "syn 2.0.46",
+]
+
+[[package]]
+name = "serde_json"
+version = "1.0.111"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "176e46fa42316f18edd598015a5166857fc835ec732f5215eac6b7bdbf0a84f4"
+dependencies = [
+ "indexmap",
+ "itoa",
