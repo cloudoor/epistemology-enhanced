@@ -1904,3 +1904,10 @@ dependencies = [
  "pin-project-lite",
  "signal-hook-registry",
  "socket2",
+ "windows-sys 0.48.0",
+]
+
+[[package]]
+name = "tokio-native-tls"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
