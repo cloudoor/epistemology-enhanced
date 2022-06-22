@@ -1965,3 +1965,10 @@ dependencies = [
  "pin-project-lite",
  "tokio",
  "tower-layer",
+ "tower-service",
+]
+
+[[package]]
+name = "tower-layer"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
