@@ -2112,3 +2112,15 @@ dependencies = [
 name = "wasm-bindgen-backend"
 version = "0.2.90"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fcdc935b63408d58a32f8cc9738a0bffd8f05cc7c002086c6ef20b7312ad9dcd"
+dependencies = [
+ "bumpalo",
+ "log",
+ "once_cell",
+ "proc-macro2",
+ "quote",
+ "syn 2.0.46",
+ "wasm-bindgen-shared",
+]
+
+[[package]]
