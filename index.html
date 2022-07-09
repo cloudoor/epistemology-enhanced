@@ -183,3 +183,12 @@
     </p>
 
     <p>Run the server
+
+      <pre>
+        epistemology -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding
+
+        Serving UI on https://localhost:8080/ from built-in UI
+        Listening with GET and POST on https://localhost:8080/api/completion
+        Examples:
+            * https://localhost:8080/api/completion?prompt=famous%20qoute:
+            * curl -X POST -d "famous quote:" https://localhost:8080/api/completion
