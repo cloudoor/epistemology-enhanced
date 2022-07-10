@@ -29,3 +29,10 @@ class EpistemologyElement extends LitElement {
     newMessages.unshift({
       role: "system",
       content: context,
+    });
+
+    input.value = "";
+    const urlHost = window.location.host;
+    const urlPath = "/api/chat";
+    const url = `https://${urlHost}${urlPath}`;
+    this.pending = true;
