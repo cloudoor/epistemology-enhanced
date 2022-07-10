@@ -36,3 +36,13 @@ class EpistemologyElement extends LitElement {
     const urlPath = "/api/chat";
     const url = `https://${urlHost}${urlPath}`;
     this.pending = true;
+    this.requestUpdate();
+    const response = await this.callChat(url, newMessages);
+    newMessages.push(response);
+    this.messages = newMessages.filter((message) => message.role !== "system");
+    this.pending = false;
+    window.scrollTo(0, document.body.scrollHeight);
+    this.requestUpdate();
+  }
+
+  clearMessages() {
