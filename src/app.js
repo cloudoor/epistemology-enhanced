@@ -17,3 +17,15 @@ class EpistemologyElement extends LitElement {
     let newMessages = [...this.messages];
     newMessages.push({
       role: "user",
+      content: message,
+    });
+    //filter outSystem context
+    newMessages = newMessages.filter((message) => message.role !== "system");
+
+    this.messages = newMessages;
+    this.requestUpdate();
+
+    // add new system context to front
+    newMessages.unshift({
+      role: "system",
+      content: context,
