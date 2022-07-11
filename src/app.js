@@ -86,3 +86,11 @@ class EpistemologyElement extends LitElement {
   render() {
     return html`${this.messages.map(
         (message, i) =>
+          html`<div style="${i !== 0 ? "margin-top: 1rem" : ""}">
+            <div><b>${message.role}</b></div>
+            <div>${message.content}</div>
+          </div> `
+      )}
+      <div>
+        <input
+          id="context"
