@@ -67,3 +67,10 @@ class EpistemologyElement extends LitElement {
     let data = "";
     while (true) {
       const { done, value } = await reader.read();
+      if (done) {
+        break;
+      }
+      data += new TextDecoder().decode(value);
+    }
+
+    // turn data into json
