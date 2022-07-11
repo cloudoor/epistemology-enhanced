@@ -94,3 +94,9 @@ class EpistemologyElement extends LitElement {
       <div>
         <input
           id="context"
+          type="text"
+          placeholder="System context"
+          autocomplete="off"
+          spellcheck="false"
+          autocorrect="off"
+        />
