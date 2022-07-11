@@ -46,3 +46,16 @@ class EpistemologyElement extends LitElement {
   }
 
   clearMessages() {
+    const input = this.querySelector("#user-input");
+    this.pending = false;
+    input.value = "";
+    this.messages = [];
+    this.requestUpdate();
+  }
+
+  async callChat(url, messages) {
+    // fetch a streaming response using fetc
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
