@@ -59,3 +59,11 @@ class EpistemologyElement extends LitElement {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ messages }),
+    });
+
+    const reader = response.body.getReader();
+    let data = "";
+    while (true) {
+      const { done, value } = await reader.read();
