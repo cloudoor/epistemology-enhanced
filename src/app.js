@@ -74,3 +74,15 @@ class EpistemologyElement extends LitElement {
     }
 
     // turn data into json
+    data = JSON.parse(data);
+
+    return data;
+  }
+
+  createRenderRoot() {
+    return this;
+  }
+
+  render() {
+    return html`${this.messages.map(
+        (message, i) =>
