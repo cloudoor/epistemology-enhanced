@@ -119,3 +119,6 @@ class EpistemologyElement extends LitElement {
       <div style="margin-bottom: 1rem">
         <button @click="${this.clearMessages}">${"Clear"}</button>
       </div>`;
+  }
+}
+customElements.define("epistemology-app", EpistemologyElement);
