@@ -107,3 +107,12 @@ class EpistemologyElement extends LitElement {
           type="text"
           placeholder="Type a message"
           autocomplete="off"
+          spellcheck="false"
+          autocorrect="off"
+        />
+      </div>
+      <div>
+        <button @click="${this.sendMessage}">
+          ${this.pending ? "Processing" : "Send"}
+        </button>
+      </div>
