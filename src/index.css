@@ -14,3 +14,10 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
