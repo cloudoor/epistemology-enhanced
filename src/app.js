@@ -116,3 +116,6 @@ class EpistemologyElement extends LitElement {
           ${this.pending ? "Processing" : "Send"}
         </button>
       </div>
+      <div style="margin-bottom: 1rem">
+        <button @click="${this.clearMessages}">${"Clear"}</button>
+      </div>`;
