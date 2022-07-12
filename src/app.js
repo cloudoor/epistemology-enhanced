@@ -100,3 +100,10 @@ class EpistemologyElement extends LitElement {
           spellcheck="false"
           autocorrect="off"
         />
+      </div>
+      <div>
+        <input
+          id="user-input"
+          type="text"
+          placeholder="Type a message"
+          autocomplete="off"
