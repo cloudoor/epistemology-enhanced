@@ -54,3 +54,11 @@ button {
   width: 100%;
   border-radius: var(--radius-2);
   padding: var(--size-fluid-1);
+  box-shadow: var(--shadow-2);
+  height: 2rem;
+  color: black;
+  font-size: 16px;
+}
+input {
+  margin-top: 1rem;
+  font-size: 16px;
