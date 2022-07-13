@@ -21,3 +21,12 @@ html {
   margin: 0;
   padding: 0;
 }
+
+body {
+  /* make a grid layout where the text area takes up most of the screen and two buttons at bottom */
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "complete"
