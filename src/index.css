@@ -38,3 +38,12 @@ body {
 }
 textarea {
   width: 100%;
+  border-radius: var(--radius-2);
+  padding: var(--size-fluid-3);
+  box-shadow: var(--shadow-2);
+  border: none;
+  grid-area: text;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
