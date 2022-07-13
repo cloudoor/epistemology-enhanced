@@ -47,3 +47,10 @@ textarea {
   font-size: 1.2rem;
   font-weight: 400;
 }
+button {
+  border: none;
+  margin-top: 1rem;
+  padding: 0;
+  width: 100%;
+  border-radius: var(--radius-2);
+  padding: var(--size-fluid-1);
