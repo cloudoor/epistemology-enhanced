@@ -37,3 +37,16 @@ class o {
   }
 }
 const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
+  r = (t, ...s) => {
+    const e =
+      1 === t.length
+        ? t[0]
+        : s.reduce(
+            (s, i, e) =>
+              s +
+              ((t) => {
+                if (!0 === t._$cssResult$) return t.cssText;
+                if ("number" == typeof t) return t;
+                throw Error(
+                  "Value passed to 'css' function must be a 'css' function result: " +
+                    t +
