@@ -30,3 +30,10 @@ class o {
           ((this.i = t = new CSSStyleSheet()).replaceSync(this.cssText),
           s && e.set(i, t));
     }
+    return t;
+  }
+  toString() {
+    return this.cssText;
+  }
+}
+const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
