@@ -64,3 +64,16 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
         t instanceof CSSStyleSheet ? t : t.styleSheet
       );
     else
+      for (const s of e) {
+        const e = document.createElement("style"),
+          o = t.litNonce;
+        void 0 !== o && e.setAttribute("nonce", o),
+          (e.textContent = s.cssText),
+          i.appendChild(e);
+      }
+  },
+  c = s
+    ? (t) => t
+    : (t) =>
+        t instanceof CSSStyleSheet
+          ? ((t) => {
