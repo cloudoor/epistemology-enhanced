@@ -59,3 +59,8 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
     return new o(e, t, i);
   },
   n = (i, e) => {
+    if (s)
+      i.adoptedStyleSheets = e.map((t) =>
+        t instanceof CSSStyleSheet ? t : t.styleSheet
+      );
+    else
