@@ -50,3 +50,12 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
                 throw Error(
                   "Value passed to 'css' function must be a 'css' function result: " +
                     t +
+                    ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security."
+                );
+              })(i) +
+              t[e + 1],
+            t[0]
+          );
+    return new o(e, t, i);
+  },
+  n = (i, e) => {
