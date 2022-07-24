@@ -77,3 +77,12 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
     : (t) =>
         t instanceof CSSStyleSheet
           ? ((t) => {
+              let s = "";
+              for (const i of t.cssRules) s += i.cssText;
+              return h(s);
+            })(t)
+          : t,
+  /**
+   * @license
+   * Copyright 2017 Google LLC
+   * SPDX-License-Identifier: BSD-3-Clause
