@@ -86,3 +86,8 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
    * @license
    * Copyright 2017 Google LLC
    * SPDX-License-Identifier: BSD-3-Clause
+   */ {
+    is: a,
+    defineProperty: l,
+    getOwnPropertyDescriptor: u,
+    getOwnPropertyNames: d,
