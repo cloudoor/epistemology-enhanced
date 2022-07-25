@@ -106,3 +106,12 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
           t = t ? y : null;
           break;
         case Object:
+        case Array:
+          t = null == t ? t : JSON.stringify(t);
+      }
+      return t;
+    },
+    fromAttribute(t, s) {
+      let i = t;
+      switch (s) {
+        case Boolean:
