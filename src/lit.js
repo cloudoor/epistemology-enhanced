@@ -97,3 +97,12 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
   v = globalThis,
   m = v.trustedTypes,
   y = m ? m.emptyScript : "",
+  g = v.reactiveElementPolyfillSupport,
+  _ = (t, s) => t,
+  b = {
+    toAttribute(t, s) {
+      switch (s) {
+        case Boolean:
+          t = t ? y : null;
+          break;
+        case Object:
