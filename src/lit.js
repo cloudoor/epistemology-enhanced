@@ -124,3 +124,12 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
         case Array:
           try {
             i = JSON.parse(t);
+          } catch (t) {
+            i = null;
+          }
+      }
+      return i;
+    },
+  },
+  S = (t, s) => !a(t, s),
+  w = { attribute: !0, type: String, converter: b, reflect: !1, hasChanged: S };
