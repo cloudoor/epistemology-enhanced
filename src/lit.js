@@ -115,3 +115,12 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
       let i = t;
       switch (s) {
         case Boolean:
+          i = null !== t;
+          break;
+        case Number:
+          i = null === t ? null : Number(t);
+          break;
+        case Object:
+        case Array:
+          try {
+            i = JSON.parse(t);
