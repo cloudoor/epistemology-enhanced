@@ -133,3 +133,9 @@ const h = (t) => new o("string" == typeof t ? t : t + "", void 0, i),
   },
   S = (t, s) => !a(t, s),
   w = { attribute: !0, type: String, converter: b, reflect: !1, hasChanged: S };
+(Symbol.metadata ??= Symbol("metadata")),
+  (v.litPropertyMetadata ??= new WeakMap());
+class $ extends HTMLElement {
+  static addInitializer(t) {
+    this.o(), (this.l ??= []).push(t);
+  }
