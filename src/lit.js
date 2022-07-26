@@ -139,3 +139,11 @@ class $ extends HTMLElement {
   static addInitializer(t) {
     this.o(), (this.l ??= []).push(t);
   }
+  static get observedAttributes() {
+    return this.finalize(), this.u && [...this.u.keys()];
+  }
+  static createProperty(t, s = w) {
+    if (
+      (s.state && (s.attribute = !1),
+      this.o(),
+      this.elementProperties.set(t, s),
