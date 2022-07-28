@@ -175,3 +175,10 @@ class $ extends HTMLElement {
       enumerable: !0,
     };
   }
+  static getPropertyOptions(t) {
+    return this.elementProperties.get(t) ?? w;
+  }
+  static o() {
+    if (this.hasOwnProperty(_("elementProperties"))) return;
+    const t = p(this);
+    t.finalize(),
