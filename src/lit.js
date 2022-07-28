@@ -168,3 +168,10 @@ class $ extends HTMLElement {
         return e?.call(this);
       },
       set(s) {
+        const h = e?.call(this);
+        o.call(this, s), this.requestUpdate(t, h, i);
+      },
+      configurable: !0,
+      enumerable: !0,
+    };
+  }
