@@ -147,3 +147,14 @@ class $ extends HTMLElement {
       (s.state && (s.attribute = !1),
       this.o(),
       this.elementProperties.set(t, s),
+      !s.noAccessor)
+    ) {
+      const i = Symbol(),
+        e = this.getPropertyDescriptor(t, i, s);
+      void 0 !== e && l(this.prototype, t, e);
+    }
+  }
+  static getPropertyDescriptor(t, s, i) {
+    const { get: e, set: o } = u(this.prototype, t) ?? {
+      get() {
+        return this[s];
