@@ -158,3 +158,13 @@ class $ extends HTMLElement {
     const { get: e, set: o } = u(this.prototype, t) ?? {
       get() {
         return this[s];
+      },
+      set(t) {
+        this[s] = t;
+      },
+    };
+    return {
+      get() {
+        return e?.call(this);
+      },
+      set(s) {
