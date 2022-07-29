@@ -232,3 +232,13 @@ class $ extends HTMLElement {
       (this.hasUpdated = !1),
       (this.m = null),
       this._();
+  }
+  _() {
+    (this.S = new Promise((t) => (this.enableUpdating = t))),
+      (this._$AL = new Map()),
+      this.$(),
+      this.requestUpdate(),
+      this.constructor.l?.forEach((t) => t(this));
+  }
+  addController(t) {
+    (this.P ??= new Set()).add(t),
