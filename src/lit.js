@@ -182,3 +182,10 @@ class $ extends HTMLElement {
     if (this.hasOwnProperty(_("elementProperties"))) return;
     const t = p(this);
     t.finalize(),
+      void 0 !== t.l && (this.l = [...t.l]),
+      (this.elementProperties = new Map(t.elementProperties));
+  }
+  static finalize() {
+    if (this.hasOwnProperty(_("finalized"))) return;
+    if (
+      ((this.finalized = !0), this.o(), this.hasOwnProperty(_("properties")))
