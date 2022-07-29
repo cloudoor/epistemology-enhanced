@@ -189,3 +189,14 @@ class $ extends HTMLElement {
     if (this.hasOwnProperty(_("finalized"))) return;
     if (
       ((this.finalized = !0), this.o(), this.hasOwnProperty(_("properties")))
+    ) {
+      const t = this.properties,
+        s = [...d(t), ...f(t)];
+      for (const i of s) this.createProperty(i, t[i]);
+    }
+    const t = this[Symbol.metadata];
+    if (null !== t) {
+      const s = litPropertyMetadata.get(t);
+      if (void 0 !== s)
+        for (const [t, i] of s) this.elementProperties.set(t, i);
+    }
