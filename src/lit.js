@@ -200,3 +200,9 @@ class $ extends HTMLElement {
       if (void 0 !== s)
         for (const [t, i] of s) this.elementProperties.set(t, i);
     }
+    this.u = new Map();
+    for (const [t, s] of this.elementProperties) {
+      const i = this.p(t, s);
+      void 0 !== i && this.u.set(i, t);
+    }
+    this.elementStyles = this.finalizeStyles(this.styles);
