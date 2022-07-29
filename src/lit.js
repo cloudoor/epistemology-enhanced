@@ -206,3 +206,17 @@ class $ extends HTMLElement {
       void 0 !== i && this.u.set(i, t);
     }
     this.elementStyles = this.finalizeStyles(this.styles);
+  }
+  static finalizeStyles(t) {
+    const s = [];
+    if (Array.isArray(t)) {
+      const i = new Set(t.flat(1 / 0).reverse());
+      for (const t of i) s.unshift(c(t));
+    } else void 0 !== t && s.push(c(t));
+    return s;
+  }
+  static p(t, s) {
+    const i = s.attribute;
+    return !1 === i
+      ? void 0
+      : "string" == typeof i
