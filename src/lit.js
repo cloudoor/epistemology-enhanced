@@ -220,3 +220,15 @@ class $ extends HTMLElement {
     return !1 === i
       ? void 0
       : "string" == typeof i
+      ? i
+      : "string" == typeof t
+      ? t.toLowerCase()
+      : void 0;
+  }
+  constructor() {
+    super(),
+      (this.v = void 0),
+      (this.isUpdatePending = !1),
+      (this.hasUpdated = !1),
+      (this.m = null),
+      this._();
