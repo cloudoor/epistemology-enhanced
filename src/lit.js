@@ -265,3 +265,10 @@ class $ extends HTMLElement {
       this.P?.forEach((t) => t.hostConnected?.());
   }
   enableUpdating(t) {}
+  disconnectedCallback() {
+    this.P?.forEach((t) => t.hostDisconnected?.());
+  }
+  attributeChangedCallback(t, s, i) {
+    this._$AK(t, i);
+  }
+  C(t, s) {
