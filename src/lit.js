@@ -257,3 +257,11 @@ class $ extends HTMLElement {
   createRenderRoot() {
     const t =
       this.shadowRoot ?? this.attachShadow(this.constructor.shadowRootOptions);
+    return n(t, this.constructor.elementStyles), t;
+  }
+  connectedCallback() {
+    (this.renderRoot ??= this.createRenderRoot()),
+      this.enableUpdating(!0),
+      this.P?.forEach((t) => t.hostConnected?.());
+  }
+  enableUpdating(t) {}
