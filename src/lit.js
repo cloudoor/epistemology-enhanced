@@ -242,3 +242,9 @@ class $ extends HTMLElement {
   }
   addController(t) {
     (this.P ??= new Set()).add(t),
+      void 0 !== this.renderRoot && this.isConnected && t.hostConnected?.();
+  }
+  removeController(t) {
+    this.P?.delete(t);
+  }
+  $() {
