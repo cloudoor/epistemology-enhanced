@@ -248,3 +248,12 @@ class $ extends HTMLElement {
     this.P?.delete(t);
   }
   $() {
+    const t = new Map(),
+      s = this.constructor.elementProperties;
+    for (const i of s.keys())
+      this.hasOwnProperty(i) && (t.set(i, this[i]), delete this[i]);
+    t.size > 0 && (this.v = t);
+  }
+  createRenderRoot() {
+    const t =
+      this.shadowRoot ?? this.attachShadow(this.constructor.shadowRootOptions);
