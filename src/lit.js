@@ -286,3 +286,10 @@ class $ extends HTMLElement {
   _$AK(t, s) {
     const i = this.constructor,
       e = i.u.get(t);
+    if (void 0 !== e && this.m !== e) {
+      const t = i.getPropertyOptions(e),
+        o =
+          "function" == typeof t.converter
+            ? { fromAttribute: t.converter }
+            : void 0 !== t.converter?.fromAttribute
+            ? t.converter
