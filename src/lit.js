@@ -279,3 +279,10 @@ class $ extends HTMLElement {
         void 0 !== i.converter?.toAttribute ? i.converter : b
       ).toAttribute(s, i.type);
       (this.m = t),
+        null == o ? this.removeAttribute(e) : this.setAttribute(e, o),
+        (this.m = null);
+    }
+  }
+  _$AK(t, s) {
+    const i = this.constructor,
+      e = i.u.get(t);
