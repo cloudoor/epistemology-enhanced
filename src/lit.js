@@ -272,3 +272,10 @@ class $ extends HTMLElement {
     this._$AK(t, i);
   }
   C(t, s) {
+    const i = this.constructor.elementProperties.get(t),
+      e = this.constructor.p(t, i);
+    if (void 0 !== e && !0 === i.reflect) {
+      const o = (
+        void 0 !== i.converter?.toAttribute ? i.converter : b
+      ).toAttribute(s, i.type);
+      (this.m = t),
