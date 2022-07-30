@@ -293,3 +293,12 @@ class $ extends HTMLElement {
             ? { fromAttribute: t.converter }
             : void 0 !== t.converter?.fromAttribute
             ? t.converter
+            : b;
+      (this.m = e), (this[e] = o.fromAttribute(s, t.type)), (this.m = null);
+    }
+  }
+  requestUpdate(t, s, i) {
+    if (void 0 !== t) {
+      if (
+        ((i ??= this.constructor.getPropertyOptions(t)),
+        !(i.hasChanged ?? S)(this[t], s))
