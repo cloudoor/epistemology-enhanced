@@ -316,3 +316,10 @@ class $ extends HTMLElement {
     this.isUpdatePending = !0;
     try {
       await this.S;
+    } catch (t) {
+      Promise.reject(t);
+    }
+    const t = this.scheduleUpdate();
+    return null != t && (await t), !this.isUpdatePending;
+  }
+  scheduleUpdate() {
