@@ -302,3 +302,17 @@ class $ extends HTMLElement {
       if (
         ((i ??= this.constructor.getPropertyOptions(t)),
         !(i.hasChanged ?? S)(this[t], s))
+      )
+        return;
+      this.T(t, s, i);
+    }
+    !1 === this.isUpdatePending && (this.S = this.A());
+  }
+  T(t, s, i) {
+    this._$AL.has(t) || this._$AL.set(t, s),
+      !0 === i.reflect && this.m !== t && (this.M ??= new Set()).add(t);
+  }
+  async A() {
+    this.isUpdatePending = !0;
+    try {
+      await this.S;
