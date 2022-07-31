@@ -329,3 +329,16 @@ class $ extends HTMLElement {
     if (!this.isUpdatePending) return;
     if (!this.hasUpdated) {
       if (((this.renderRoot ??= this.createRenderRoot()), this.v)) {
+        for (const [t, s] of this.v) this[t] = s;
+        this.v = void 0;
+      }
+      const t = this.constructor.elementProperties;
+      if (t.size > 0)
+        for (const [s, i] of t)
+          !0 !== i.wrapped ||
+            this._$AL.has(s) ||
+            void 0 === this[s] ||
+            this.T(s, this[s], i);
+    }
+    let t = !1;
+    const s = this._$AL;
