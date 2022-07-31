@@ -323,3 +323,9 @@ class $ extends HTMLElement {
     return null != t && (await t), !this.isUpdatePending;
   }
   scheduleUpdate() {
+    return this.performUpdate();
+  }
+  performUpdate() {
+    if (!this.isUpdatePending) return;
+    if (!this.hasUpdated) {
+      if (((this.renderRoot ??= this.createRenderRoot()), this.v)) {
