@@ -370,3 +370,12 @@ class $ extends HTMLElement {
     return this.S;
   }
   shouldUpdate(t) {
+    return !0;
+  }
+  update(t) {
+    (this.M &&= this.M.forEach((t) => this.C(t, this[t]))), this.k();
+  }
+  updated(t) {}
+  firstUpdated(t) {}
+}
+($.elementStyles = []),
