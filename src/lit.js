@@ -408,3 +408,10 @@ const P = globalThis,
   j = RegExp(
     `>|${z}(?:([^\\s"'>=/]+)(${z}*=${z}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`,
     "g"
+  ),
+  D = /'/g,
+  H = /"/g,
+  B = /^(?:script|style|textarea|title)$/i,
+  W =
+    (t) =>
+    (s, ...i) => ({ _$litType$: t, strings: s, values: i }),
