@@ -379,3 +379,10 @@ class $ extends HTMLElement {
   firstUpdated(t) {}
 }
 ($.elementStyles = []),
+  ($.shadowRootOptions = { mode: "open" }),
+  ($[_("elementProperties")] = new Map()),
+  ($[_("finalized")] = new Map()),
+  g?.({ ReactiveElement: $ }),
+  (v.reactiveElementVersions ??= []).push("2.0.4");
+/**
+ * @license
