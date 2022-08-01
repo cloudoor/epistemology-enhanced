@@ -386,3 +386,10 @@ class $ extends HTMLElement {
   (v.reactiveElementVersions ??= []).push("2.0.4");
 /**
  * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const P = globalThis,
+  C = P.trustedTypes,
+  T = C ? C.createPolicy("lit-html", { createHTML: (t) => t }) : void 0,
+  x = "$lit$",
