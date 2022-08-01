@@ -342,3 +342,17 @@ class $ extends HTMLElement {
     }
     let t = !1;
     const s = this._$AL;
+    try {
+      (t = this.shouldUpdate(s)),
+        t
+          ? (this.willUpdate(s),
+            this.P?.forEach((t) => t.hostUpdate?.()),
+            this.update(s))
+          : this.k();
+    } catch (s) {
+      throw ((t = !1), this.k(), s);
+    }
+    t && this._$AE(s);
+  }
+  willUpdate(t) {}
+  _$AE(t) {
