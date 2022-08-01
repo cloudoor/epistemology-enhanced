@@ -356,3 +356,17 @@ class $ extends HTMLElement {
   }
   willUpdate(t) {}
   _$AE(t) {
+    this.P?.forEach((t) => t.hostUpdated?.()),
+      this.hasUpdated || ((this.hasUpdated = !0), this.firstUpdated(t)),
+      this.updated(t);
+  }
+  k() {
+    (this._$AL = new Map()), (this.isUpdatePending = !1);
+  }
+  get updateComplete() {
+    return this.getUpdateComplete();
+  }
+  getUpdateComplete() {
+    return this.S;
+  }
+  shouldUpdate(t) {
