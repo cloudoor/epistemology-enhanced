@@ -449,3 +449,12 @@ const X = (t, s) => {
             ? (B.test(c[2]) && (o = RegExp("</" + c[2], "g")), (r = j))
             : void 0 !== c[3] && (r = j)
           : r === j
+          ? ">" === c[0]
+            ? ((r = o ?? V), (a = -1))
+            : void 0 === c[1]
+            ? (a = -2)
+            : ((a = r.lastIndex - c[2].length),
+              (n = c[1]),
+              (r = void 0 === c[3] ? j : '"' === c[3] ? H : D))
+          : r === H || r === D
+          ? (r = j)
