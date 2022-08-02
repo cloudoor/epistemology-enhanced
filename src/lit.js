@@ -437,3 +437,15 @@ const X = (t, s) => {
     let n,
       c,
       a = -1,
+      l = 0;
+    for (; l < i.length && ((r.lastIndex = l), (c = r.exec(i)), null !== c); )
+      (l = r.lastIndex),
+        r === V
+          ? "!--" === c[1]
+            ? (r = L)
+            : void 0 !== c[1]
+            ? (r = I)
+            : void 0 !== c[2]
+            ? (B.test(c[2]) && (o = RegExp("</" + c[2], "g")), (r = j))
+            : void 0 !== c[3] && (r = j)
+          : r === j
