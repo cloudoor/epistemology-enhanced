@@ -466,3 +466,7 @@ const X = (t, s) => {
       r === V
         ? i + k
         : a >= 0
+        ? (e.push(n), i.slice(0, a) + x + i.slice(a) + A + u)
+        : i + A + (-2 === a ? s : u);
+  }
+  return [Q(t, h + (t[i] || "<?>") + (2 === s ? "</svg>" : "")), e];
