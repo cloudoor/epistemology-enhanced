@@ -421,3 +421,19 @@ const P = globalThis,
   F = Symbol.for("lit-nothing"),
   G = new WeakMap(),
   K = E.createTreeWalker(E, 129);
+function Q(t, s) {
+  if (!Array.isArray(t) || !t.hasOwnProperty("raw"))
+    throw Error("invalid template strings array");
+  return void 0 !== T ? T.createHTML(s) : s;
+}
+const X = (t, s) => {
+  const i = t.length - 1,
+    e = [];
+  let o,
+    h = 2 === s ? "<svg>" : "",
+    r = V;
+  for (let s = 0; s < i; s++) {
+    const i = t[s];
+    let n,
+      c,
+      a = -1,
