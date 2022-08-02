@@ -458,3 +458,11 @@ const X = (t, s) => {
               (r = void 0 === c[3] ? j : '"' === c[3] ? H : D))
           : r === H || r === D
           ? (r = j)
+          : r === L || r === I
+          ? (r = V)
+          : ((r = j), (o = void 0));
+    const u = r === j && t[s + 1].startsWith("/>") ? " " : "";
+    h +=
+      r === V
+        ? i + k
+        : a >= 0
