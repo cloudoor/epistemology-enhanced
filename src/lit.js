@@ -481,3 +481,11 @@ class Y {
       n = this.parts,
       [c, a] = X(t, s);
     if (
+      ((this.el = Y.createElement(c, i)),
+      (K.currentNode = this.el.content),
+      2 === s)
+    ) {
+      const t = this.el.content.firstChild;
+      t.replaceWith(...t.childNodes);
+    }
+    for (; null !== (e = K.nextNode()) && n.length < r; ) {
