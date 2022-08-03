@@ -470,3 +470,14 @@ const X = (t, s) => {
         : i + A + (-2 === a ? s : u);
   }
   return [Q(t, h + (t[i] || "<?>") + (2 === s ? "</svg>" : "")), e];
+};
+class Y {
+  constructor({ strings: t, _$litType$: s }, i) {
+    let e;
+    this.parts = [];
+    let o = 0,
+      h = 0;
+    const r = t.length - 1,
+      n = this.parts,
+      [c, a] = X(t, s);
+    if (
