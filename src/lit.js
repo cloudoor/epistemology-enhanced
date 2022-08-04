@@ -510,3 +510,15 @@ class Y {
                     ? rt
                     : et,
               }),
+                e.removeAttribute(t);
+            } else
+              t.startsWith(A) &&
+                (n.push({ type: 6, index: o }), e.removeAttribute(t));
+        if (B.test(e.tagName)) {
+          const t = e.textContent.split(A),
+            s = t.length - 1;
+          if (s > 0) {
+            e.textContent = C ? C.emptyScript : "";
+            for (let i = 0; i < s; i++)
+              e.append(t[i], U()),
+                K.nextNode(),
