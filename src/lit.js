@@ -522,3 +522,18 @@ class Y {
             for (let i = 0; i < s; i++)
               e.append(t[i], U()),
                 K.nextNode(),
+                n.push({ type: 2, index: ++o });
+            e.append(t[s], U());
+          }
+        }
+      } else if (8 === e.nodeType)
+        if (e.data === M) n.push({ type: 2, index: o });
+        else {
+          let t = -1;
+          for (; -1 !== (t = e.data.indexOf(A, t + 1)); )
+            n.push({ type: 7, index: o }), (t += A.length - 1);
+        }
+      o++;
+    }
+  }
+  static createElement(t, s) {
