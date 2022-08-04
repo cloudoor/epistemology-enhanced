@@ -489,3 +489,18 @@ class Y {
       t.replaceWith(...t.childNodes);
     }
     for (; null !== (e = K.nextNode()) && n.length < r; ) {
+      if (1 === e.nodeType) {
+        if (e.hasAttributes())
+          for (const t of e.getAttributeNames())
+            if (t.endsWith(x)) {
+              const s = a[h++],
+                i = e.getAttribute(t).split(A),
+                r = /([.?@])?(.*)/.exec(s);
+              n.push({
+                type: 1,
+                index: o,
+                name: r[2],
+                strings: i,
+                ctor:
+                  "." === r[1]
+                    ? ot
