@@ -537,3 +537,15 @@ class Y {
     }
   }
   static createElement(t, s) {
+    const i = E.createElement("template");
+    return (i.innerHTML = t), i;
+  }
+}
+function tt(t, s, i = t, e) {
+  if (s === Z) return s;
+  let o = void 0 !== e ? i.U?.[e] : i.N;
+  const h = N(s) ? void 0 : s._$litDirective$;
+  return (
+    o?.constructor !== h &&
+      (o?._$AO?.(!1),
+      void 0 === h ? (o = void 0) : ((o = new h(t)), o._$AT(t, i, e)),
