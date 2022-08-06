@@ -559,3 +559,11 @@ class st {
     (this._$AV = []), (this._$AN = void 0), (this._$AD = t), (this._$AM = s);
   }
   get parentNode() {
+    return this._$AM.parentNode;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  O(t) {
+    const {
+        el: { content: s },
