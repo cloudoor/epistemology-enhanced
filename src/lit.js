@@ -567,3 +567,16 @@ class st {
   O(t) {
     const {
         el: { content: s },
+        parts: i,
+      } = this._$AD,
+      e = (t?.creationScope ?? E).importNode(s, !0);
+    K.currentNode = e;
+    let o = K.nextNode(),
+      h = 0,
+      r = 0,
+      n = i[0];
+    for (; void 0 !== n; ) {
+      if (h === n.index) {
+        let s;
+        2 === n.type
+          ? (s = new it(o, o.nextSibling, this, t))
