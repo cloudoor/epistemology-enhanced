@@ -580,3 +580,10 @@ class st {
         let s;
         2 === n.type
           ? (s = new it(o, o.nextSibling, this, t))
+          : 1 === n.type
+          ? (s = new n.ctor(o, n.name, n.strings, this, t))
+          : 6 === n.type && (s = new nt(o, this, t)),
+          this._$AV.push(s),
+          (n = i[++r]);
+      }
+      h !== n?.index && ((o = K.nextNode()), h++);
