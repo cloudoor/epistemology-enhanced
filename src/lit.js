@@ -587,3 +587,11 @@ class st {
           (n = i[++r]);
       }
       h !== n?.index && ((o = K.nextNode()), h++);
+    }
+    return (K.currentNode = E), e;
+  }
+  R(t) {
+    let s = 0;
+    for (const i of this._$AV)
+      void 0 !== i &&
+        (void 0 !== i.strings
