@@ -616,3 +616,10 @@ class it {
   }
   get parentNode() {
     let t = this._$AA.parentNode;
+    const s = this._$AM;
+    return void 0 !== s && 11 === t?.nodeType && (t = s.parentNode), t;
+  }
+  get startNode() {
+    return this._$AA;
+  }
+  get endNode() {
