@@ -608,3 +608,11 @@ class it {
     (this.type = 2),
       (this._$AH = F),
       (this._$AN = void 0),
+      (this._$AA = t),
+      (this._$AB = s),
+      (this._$AM = i),
+      (this.options = e),
+      (this.V = e?.isConnected ?? !0);
+  }
+  get parentNode() {
+    let t = this._$AA.parentNode;
