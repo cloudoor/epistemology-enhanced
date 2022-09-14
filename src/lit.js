@@ -657,3 +657,11 @@ class it {
         "number" == typeof i
           ? this._$AC(t)
           : (void 0 === i.el &&
+              (i.el = Y.createElement(Q(i.h, i.h[0]), this.options)),
+            i);
+    if (this._$AH?._$AD === e) this._$AH.R(s);
+    else {
+      const t = new st(e, this),
+        i = t.O(this.options);
+      t.R(s), this.j(i), (this._$AH = t);
+    }
