@@ -635,3 +635,10 @@ class it {
         ? this.I(t)
         : void 0 !== t.nodeType
         ? this.j(t)
+        : R(t)
+        ? this.D(t)
+        : this.L(t);
+  }
+  H(t) {
+    return this._$AA.parentNode.insertBefore(t, this._$AB);
+  }
