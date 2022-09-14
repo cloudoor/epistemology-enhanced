@@ -623,3 +623,15 @@ class it {
     return this._$AA;
   }
   get endNode() {
+    return this._$AB;
+  }
+  _$AI(t, s = this) {
+    (t = tt(this, t, s)),
+      N(t)
+        ? t === F || null == t || "" === t
+          ? (this._$AH !== F && this._$AR(), (this._$AH = F))
+          : t !== this._$AH && t !== Z && this.L(t)
+        : void 0 !== t._$litType$
+        ? this.I(t)
+        : void 0 !== t.nodeType
+        ? this.j(t)
