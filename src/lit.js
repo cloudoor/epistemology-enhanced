@@ -691,3 +691,12 @@ class it {
   }
   setConnected(t) {
     void 0 === this._$AM && ((this.V = t), this._$AP?.(t));
+  }
+}
+class et {
+  get tagName() {
+    return this.element.tagName;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
