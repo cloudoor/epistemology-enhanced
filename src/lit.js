@@ -674,3 +674,12 @@ class it {
     O(this._$AH) || ((this._$AH = []), this._$AR());
     const s = this._$AH;
     let i,
+      e = 0;
+    for (const o of t)
+      e === s.length
+        ? s.push((i = new it(this.H(U()), this.H(U()), this, this.options)))
+        : (i = s[e]),
+        i._$AI(o),
+        e++;
+    e < s.length && (this._$AR(i && i._$AB.nextSibling, e), (s.length = e));
+  }
