@@ -683,3 +683,11 @@ class it {
         e++;
     e < s.length && (this._$AR(i && i._$AB.nextSibling, e), (s.length = e));
   }
+  _$AR(t = this._$AA.nextSibling, s) {
+    for (this._$AP?.(!1, !0, s); t && t !== this._$AB; ) {
+      const s = t.nextSibling;
+      t.remove(), (t = s);
+    }
+  }
+  setConnected(t) {
+    void 0 === this._$AM && ((this.V = t), this._$AP?.(t));
