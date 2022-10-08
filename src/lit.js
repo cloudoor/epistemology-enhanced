@@ -738,3 +738,15 @@ class et {
       : this.element.setAttribute(this.name, t ?? "");
   }
 }
+class ot extends et {
+  constructor() {
+    super(...arguments), (this.type = 3);
+  }
+  B(t) {
+    this.element[this.name] = t === F ? void 0 : t;
+  }
+}
+class ht extends et {
+  constructor() {
+    super(...arguments), (this.type = 4);
+  }
