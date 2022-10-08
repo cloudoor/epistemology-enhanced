@@ -721,3 +721,14 @@ class et {
         (h = !N(t) || (t !== this._$AH && t !== Z)),
         h && (this._$AH = t);
     else {
+      const e = t;
+      let r, n;
+      for (t = o[0], r = 0; r < o.length - 1; r++)
+        (n = tt(this, e[i + r], s, r)),
+          n === Z && (n = this._$AH[r]),
+          (h ||= !N(n) || n !== this._$AH[r]),
+          n === F ? (t = F) : t !== F && (t += (n ?? "") + o[r + 1]),
+          (this._$AH[r] = n);
+    }
+    h && !e && this.B(t);
+  }
