@@ -732,3 +732,9 @@ class et {
     }
     h && !e && this.B(t);
   }
+  B(t) {
+    t === F
+      ? this.element.removeAttribute(this.name)
+      : this.element.setAttribute(this.name, t ?? "");
+  }
+}
