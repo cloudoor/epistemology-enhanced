@@ -704,3 +704,11 @@ class et {
     (this.type = 1),
       (this._$AH = F),
       (this._$AN = void 0),
+      (this.element = t),
+      (this.name = s),
+      (this._$AM = e),
+      (this.options = o),
+      i.length > 2 || "" !== i[0] || "" !== i[1]
+        ? ((this._$AH = Array(i.length - 1).fill(new String())),
+          (this.strings = i))
+        : (this._$AH = F);
