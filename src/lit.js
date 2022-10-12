@@ -769,3 +769,10 @@ class rt extends et {
       o = t !== F && (i === F || e);
     e && this.element.removeEventListener(this.name, this, i),
       o && this.element.addEventListener(this.name, this, t),
+      (this._$AH = t);
+  }
+  handleEvent(t) {
+    "function" == typeof this._$AH
+      ? this._$AH.call(this.options?.host ?? this.element, t)
+      : this._$AH.handleEvent(t);
+  }
