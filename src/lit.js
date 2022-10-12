@@ -763,3 +763,9 @@ class rt extends et {
     const i = this._$AH,
       e =
         (t === F && i !== F) ||
+        t.capture !== i.capture ||
+        t.once !== i.once ||
+        t.passive !== i.passive,
+      o = t !== F && (i === F || e);
+    e && this.element.removeEventListener(this.name, this, i),
+      o && this.element.addEventListener(this.name, this, t),
