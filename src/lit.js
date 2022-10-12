@@ -750,3 +750,16 @@ class ht extends et {
   constructor() {
     super(...arguments), (this.type = 4);
   }
+  B(t) {
+    this.element.toggleAttribute(this.name, !!t && t !== F);
+  }
+}
+class rt extends et {
+  constructor(t, s, i, e, o) {
+    super(t, s, i, e, o), (this.type = 5);
+  }
+  _$AI(t, s = this) {
+    if ((t = tt(this, t, s, 0) ?? F) === Z) return;
+    const i = this._$AH,
+      e =
+        (t === F && i !== F) ||
