@@ -811,3 +811,12 @@ const ct = {
   at = P.litHtmlPolyfillSupport;
 at?.(Y, it), (P.litHtmlVersions ??= []).push("3.1.3");
 const lt = (t, s, i) => {
+  const e = i?.renderBefore ?? s;
+  let o = e._$litPart$;
+  if (void 0 === o) {
+    const t = i?.renderBefore ?? null;
+    e._$litPart$ = o = new it(s.insertBefore(U(), t), t, void 0, i ?? {});
+  }
+  return o._$AI(t), o;
+};
+/**
