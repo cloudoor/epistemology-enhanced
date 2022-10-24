@@ -800,3 +800,14 @@ const ct = {
     F: X,
     G: st,
     K: R,
+    X: tt,
+    Y: it,
+    tt: et,
+    st: ht,
+    it: rt,
+    et: ot,
+    ot: nt,
+  },
+  at = P.litHtmlPolyfillSupport;
+at?.(Y, it), (P.litHtmlVersions ??= []).push("3.1.3");
+const lt = (t, s, i) => {
