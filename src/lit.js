@@ -776,3 +776,12 @@ class rt extends et {
       ? this._$AH.call(this.options?.host ?? this.element, t)
       : this._$AH.handleEvent(t);
   }
+}
+class nt {
+  constructor(t, s, i) {
+    (this.element = t),
+      (this.type = 6),
+      (this._$AN = void 0),
+      (this._$AM = s),
+      (this.options = i);
+  }
