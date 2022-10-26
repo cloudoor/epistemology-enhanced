@@ -831,3 +831,12 @@ const lt = (t, s, i) => {
   }
   createRenderRoot() {
     const t = super.createRenderRoot();
+    return (this.renderOptions.renderBefore ??= t.firstChild), t;
+  }
+  update(t) {
+    const s = this.render();
+    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected),
+      super.update(t),
+      (this.ht = lt(s, this.renderRoot, this.renderOptions));
+  }
+  connectedCallback() {
