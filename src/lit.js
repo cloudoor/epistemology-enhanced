@@ -847,3 +847,10 @@ const lt = (t, s, i) => {
   }
   render() {
     return Z;
+  }
+}
+(ut._$litElement$ = !0),
+  (ut[("finalized", "finalized")] = !0),
+  globalThis.litElementHydrateSupport?.({ LitElement: ut });
+const dt = globalThis.litElementPolyfillSupport;
+dt?.({ LitElement: ut });
