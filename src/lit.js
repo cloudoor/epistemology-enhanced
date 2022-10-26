@@ -840,3 +840,10 @@ const lt = (t, s, i) => {
       (this.ht = lt(s, this.renderRoot, this.renderOptions));
   }
   connectedCallback() {
+    super.connectedCallback(), this.ht?.setConnected(!0);
+  }
+  disconnectedCallback() {
+    super.disconnectedCallback(), this.ht?.setConnected(!1);
+  }
+  render() {
+    return Z;
