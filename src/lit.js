@@ -820,3 +820,14 @@ const lt = (t, s, i) => {
   return o._$AI(t), o;
 };
 /**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ class ut extends $ {
+  constructor() {
+    super(...arguments),
+      (this.renderOptions = { host: this }),
+      (this.ht = void 0);
+  }
+  createRenderRoot() {
+    const t = super.createRenderRoot();
