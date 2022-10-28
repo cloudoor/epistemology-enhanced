@@ -858,3 +858,15 @@ const ft = {
   _$AK: (t, s, i) => {
     t._$AK(s, i);
   },
+  _$AL: (t) => t._$AL,
+};
+(globalThis.litElementVersions ??= []).push("4.0.5");
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const pt = !1;
+export {
+  o as CSSResult,
+  ut as LitElement,
