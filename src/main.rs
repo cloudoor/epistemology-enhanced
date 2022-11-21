@@ -14,3 +14,15 @@ use serde::Serialize;
 use std::fs;
 use std::fs::File;
 use std::io::BufReader;
+use std::io::Read;
+use std::path::PathBuf;
+use std::process::{Command, Stdio};
+use std::thread;
+use tokio::sync::mpsc;
+use tokio_stream::wrappers::UnboundedReceiverStream;
+
+#[derive(Serialize, Deserialize)]
+struct OlamaResponse {
+    model: String,
+    created_at: String,
+    message: Message,
