@@ -885,3 +885,6 @@ export {
   lt as render,
   s as supportsAdoptingStyleSheets,
   J as svg,
+  h as unsafeCSS,
+};
+//# sourceMappingURL=lit-core.min.js.map
