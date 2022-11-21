@@ -36,3 +36,16 @@ struct Message {
 
 #[derive(Serialize, Deserialize)]
 struct OlamaRequest {
+    model: String,
+    messages: Vec<Message>,
+    stream: bool,
+}
+
+#[derive(Serialize, Deserialize)]
+struct ChatRequest {
+    messages: Vec<Message>,
+}
+
+#[derive(Parser, Clone)]
+#[command(author, version, about, long_about = None)]
+struct EpistemologyCliArgs {
