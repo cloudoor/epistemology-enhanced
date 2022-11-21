@@ -26,3 +26,13 @@ struct OlamaResponse {
     model: String,
     created_at: String,
     message: Message,
+}
+
+#[derive(Serialize, Deserialize)]
+struct Message {
+    role: String,
+    content: String,
+}
+
+#[derive(Serialize, Deserialize)]
+struct OlamaRequest {
