@@ -106,3 +106,12 @@ struct EpistemologyCliArgs {
         long,
         value_name = "CONTEXT_LENGTH",
         help = "Context length of LLM generation (default: 512)"
+    )]
+    ctx_size: Option<u32>,
+
+    #[arg(
+        short = 'j',
+        long,
+        value_name = "JSON_SCHEMA_PATH",
+        help = "Path to JSON schema file to constrain output (optional)"
+    )]
