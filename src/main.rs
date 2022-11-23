@@ -90,3 +90,11 @@ struct EpistemologyCliArgs {
         value_name = "NUM_GPU_LAYERS",
         help = "Number of layers to delegate to GPU"
     )]
+    n_gpu_layers: Option<u32>,
+
+    #[arg(
+        short = 'g',
+        long,
+        value_name = "GRAMMAR_PATH",
+        help = "Path to grammar file (optional)"
+    )]
