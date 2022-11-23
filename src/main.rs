@@ -98,3 +98,11 @@ struct EpistemologyCliArgs {
         value_name = "GRAMMAR_PATH",
         help = "Path to grammar file (optional)"
     )]
+    grammar: Option<PathBuf>,
+
+    //context length
+    #[arg(
+        short = 'c',
+        long,
+        value_name = "CONTEXT_LENGTH",
+        help = "Context length of LLM generation (default: 512)"
