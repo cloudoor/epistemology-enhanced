@@ -63,3 +63,18 @@ struct EpistemologyCliArgs {
         short = 'e',
         long,
         value_name = "LLAMMA_CPP_MAIN_EXE_PATH",
+        help = "Path to LLAMMA CPP main executable"
+    )]
+    exe_path: Option<PathBuf>,
+
+    #[arg(
+        short = 'd',
+        long,
+        value_name = "LLAMMA_CPP_EMBEDDING_EXE_PATH",
+        help = "Path to LLAMMA CPP embedding executable"
+    )]
+    embedding_path: Option<PathBuf>,
+
+    // num threads
+    #[arg(
+        short = 't',
