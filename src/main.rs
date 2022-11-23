@@ -49,3 +49,17 @@ struct ChatRequest {
 #[derive(Parser, Clone)]
 #[command(author, version, about, long_about = None)]
 struct EpistemologyCliArgs {
+    #[arg(short, value_name = "GGUF_MODEL", help = "Path to GGUF model")]
+    model: PathBuf,
+
+    #[arg(
+        short,
+        value_name = "OLLAMA_HOST",
+        help = "Address of OLLAMA server http://localhost:11434"
+    )]
+    ollama_host: Option<String>,
+
+    #[arg(
+        short = 'e',
+        long,
+        value_name = "LLAMMA_CPP_MAIN_EXE_PATH",
