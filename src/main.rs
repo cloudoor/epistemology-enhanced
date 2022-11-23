@@ -78,3 +78,15 @@ struct EpistemologyCliArgs {
     // num threads
     #[arg(
         short = 't',
+        long,
+        value_name = "NUM_THREADS",
+        help = "Number of threads to use for LLM generation (default: 4)"
+    )]
+    threads: Option<u32>,
+
+    #[arg(
+        short = 'l',
+        long,
+        value_name = "NUM_GPU_LAYERS",
+        help = "Number of layers to delegate to GPU"
+    )]
