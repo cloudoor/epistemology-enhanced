@@ -115,3 +115,9 @@ struct EpistemologyCliArgs {
         value_name = "JSON_SCHEMA_PATH",
         help = "Path to JSON schema file to constrain output (optional)"
     )]
+    json_schema: Option<PathBuf>,
+
+    #[arg(
+        short,
+        long,
+        value_name = "UI_PATH",
