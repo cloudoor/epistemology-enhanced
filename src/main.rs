@@ -121,3 +121,12 @@ struct EpistemologyCliArgs {
         short,
         long,
         value_name = "UI_PATH",
+        help = "Path to UI static files folder"
+    )]
+    ui: Option<PathBuf>,
+
+    // Output length with default 512
+    #[arg(
+        short = 'n',
+        long,
+        value_name = "OUTPUT_LENGTH",
