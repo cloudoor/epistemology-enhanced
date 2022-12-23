@@ -139,3 +139,14 @@ struct EpistemologyCliArgs {
         short = 'a',
         long,
         value_name = "ADDRESS",
+        help = "Optional address instead of default (e.g 0.0.0.0), default is localhost"
+    )]
+    address: Option<String>,
+
+    // Port to serve on
+    #[arg(short, long, value_name = "PORT", help = "Port to serve on")]
+    port: Option<u16>,
+
+    // HTTPS key file
+    #[arg(
+        long,
