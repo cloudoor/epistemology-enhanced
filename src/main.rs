@@ -130,3 +130,12 @@ struct EpistemologyCliArgs {
         short = 'n',
         long,
         value_name = "OUTPUT_LENGTH",
+        help = "Output length of LLM generation"
+    )]
+    n_predict: Option<i32>,
+
+    // Optional origin instead of localhost
+    #[arg(
+        short = 'a',
+        long,
+        value_name = "ADDRESS",
