@@ -150,3 +150,16 @@ struct EpistemologyCliArgs {
     // HTTPS key file
     #[arg(
         long,
+        value_name = "HTTPS_KEY_FILE",
+        help = "HTTPS key file (optional)"
+    )]
+    https_key_file: Option<PathBuf>,
+
+    // HTTPS cert file
+    #[arg(
+        long,
+        value_name = "HTTPS_CERT_FILE",
+        help = "HTTPS cert file (optional)"
+    )]
+    https_cert_file: Option<PathBuf>,
+}
