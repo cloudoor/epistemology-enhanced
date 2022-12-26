@@ -163,3 +163,12 @@ struct EpistemologyCliArgs {
     )]
     https_cert_file: Option<PathBuf>,
 }
+
+#[derive(Deserialize)]
+struct TextCompletationRequestQuery {
+    prompt: String,
+}
+
+async fn handle_completion_get(
+    data: web::Data<EpistemologyCliArgs>,
+    query: web::Query<TextCompletationRequestQuery>,
