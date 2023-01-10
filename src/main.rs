@@ -172,3 +172,18 @@ struct TextCompletationRequestQuery {
 async fn handle_completion_get(
     data: web::Data<EpistemologyCliArgs>,
     query: web::Query<TextCompletationRequestQuery>,
+) -> impl Responder {
+    run_streaming_llm(Mode::Completion, &data, query.prompt.clone())
+}
+
+async fn handle_completion_post(
+    data: web::Data<EpistemologyCliArgs>,
+    body: String,
+) -> impl Responder {
+    run_streaming_llm(Mode::Completion, &data, body)
+}
+
+async fn handle_chat_post(
+    data: web::Data<EpistemologyCliArgs>,
+    body: web::Json<ChatRequest>,
+) -> impl Responder {
