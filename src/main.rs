@@ -192,3 +192,13 @@ async fn handle_chat_post(
 
 async fn handle_embedding_post(
     data: web::Data<EpistemologyCliArgs>,
+    body: String,
+) -> impl Responder {
+    run_streaming_llm(Mode::Embedding, &data, body)
+}
+
+async fn app() -> impl Responder {
+    HttpResponse::Ok()
+        .insert_header(("Content-Type", "application/javascript"))
+        .body(include_str!("./app.js"))
+}
