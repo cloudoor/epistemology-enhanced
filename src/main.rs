@@ -187,3 +187,8 @@ async fn handle_chat_post(
     data: web::Data<EpistemologyCliArgs>,
     body: web::Json<ChatRequest>,
 ) -> impl Responder {
+    run_chat(Mode::Chat, &data, body.into_inner())
+}
+
+async fn handle_embedding_post(
+    data: web::Data<EpistemologyCliArgs>,
