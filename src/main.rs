@@ -212,3 +212,13 @@ async fn lit() -> impl Responder {
 async fn index() -> impl Responder {
     HttpResponse::Ok().body(include_str!("./index.html"))
 }
+
+async fn css() -> impl Responder {
+    HttpResponse::Ok().body(include_str!("./index.css"))
+}
+
+async fn inter() -> impl Responder {
+    let font_bytes = include_bytes!("./Inter-Thin.ttf");
+    HttpResponse::Ok()
+        .content_type("font/ttf")
+        .body(font_bytes.to_vec())
