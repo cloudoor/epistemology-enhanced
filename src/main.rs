@@ -202,3 +202,13 @@ async fn app() -> impl Responder {
         .insert_header(("Content-Type", "application/javascript"))
         .body(include_str!("./app.js"))
 }
+
+async fn lit() -> impl Responder {
+    HttpResponse::Ok()
+        .insert_header(("Content-Type", "application/javascript"))
+        .body(include_str!("./lit.js"))
+}
+
+async fn index() -> impl Responder {
+    HttpResponse::Ok().body(include_str!("./index.html"))
+}
