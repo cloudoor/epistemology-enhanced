@@ -222,3 +222,8 @@ async fn inter() -> impl Responder {
     HttpResponse::Ok()
         .content_type("font/ttf")
         .body(font_bytes.to_vec())
+}
+
+async fn icon() -> impl Responder {
+    let icon_bytes = include_bytes!("./icon.png");
+    HttpResponse::Ok()
