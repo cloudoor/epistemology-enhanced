@@ -246,3 +246,9 @@ async fn main() -> std::io::Result<()> {
     if cli.https_key_file.is_some() != cli.https_cert_file.is_some() {
         panic!("Must provide both HTTPS key and cert files");
     }
+
+    let protocol = "https";
+
+    // let's print out some helpful information for the user
+    if let Some(ui) = &cli.ui {
+        println!(
