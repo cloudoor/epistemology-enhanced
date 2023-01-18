@@ -239,3 +239,10 @@ async fn main() -> std::io::Result<()> {
 
     // let's make these parameters available to the web server for all requests to use
     let app_data = web::Data::new(cli.clone());
+
+    let address = cli.address.unwrap_or("localhost".to_string());
+
+    // ensure we have both key and cert if either is provided
+    if cli.https_key_file.is_some() != cli.https_cert_file.is_some() {
+        panic!("Must provide both HTTPS key and cert files");
+    }
