@@ -227,3 +227,15 @@ async fn inter() -> impl Responder {
 async fn icon() -> impl Responder {
     let icon_bytes = include_bytes!("./icon.png");
     HttpResponse::Ok()
+        .content_type("image/png")
+        .body(icon_bytes.to_vec())
+}
+
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    let cli: EpistemologyCliArgs = EpistemologyCliArgs::parse();
+
+    let port = cli.port.unwrap_or(8080);
+
+    // let's make these parameters available to the web server for all requests to use
+    let app_data = web::Data::new(cli.clone());
