@@ -252,3 +252,11 @@ async fn main() -> std::io::Result<()> {
     // let's print out some helpful information for the user
     if let Some(ui) = &cli.ui {
         println!(
+            "Serving UI on {}://{}:{}/ from {}",
+            protocol,
+            address,
+            port,
+            match fs::canonicalize(ui) {
+                Ok(full_path) => full_path.display().to_string(),
+                Err(err) => return Err(std::io::Error::new(std::io::ErrorKind::Other, err)),
+            }
