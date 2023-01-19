@@ -260,3 +260,8 @@ async fn main() -> std::io::Result<()> {
                 Ok(full_path) => full_path.display().to_string(),
                 Err(err) => return Err(std::io::Error::new(std::io::ErrorKind::Other, err)),
             }
+        );
+    } else {
+        println!(
+            "Serving UI on {}://{}:{}/ from built-in UI",
+            protocol, address, port
