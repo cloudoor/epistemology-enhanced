@@ -289,3 +289,13 @@ Examples:
 
     let s = HttpServer::new(move || {
         let cors = Cors::default()
+            .allowed_origin_fn(|_, _req_head| true)
+            .allowed_methods(vec!["GET", "POST"]);
+        let mut a = App::new()
+            .app_data(app_data.clone())
+            .wrap(cors)
+            .service(
+                web::resource("/api/completion")
+                    .route(web::get().to(handle_completion_get))
+                    .route(web::post().to(handle_completion_post)),
+            )
