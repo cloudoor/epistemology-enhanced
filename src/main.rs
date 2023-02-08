@@ -278,3 +278,14 @@ Examples:
         port,
         protocol,
         address,
+        port,
+        protocol,
+        address,
+        port,
+        protocol,
+        address,
+        port
+    );
+
+    let s = HttpServer::new(move || {
+        let cors = Cors::default()
