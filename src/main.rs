@@ -265,3 +265,16 @@ async fn main() -> std::io::Result<()> {
         println!(
             "Serving UI on {}://{}:{}/ from built-in UI",
             protocol, address, port
+        );
+    }
+    println!(
+        r#"Listening with GET and POST on {}://{}:{}/api/completion
+Examples:
+    * {}://{}:{}/api/completion?prompt=famous%20qoute:
+    * curl -X POST -d "famous qoute:" {}://{}:{}/api/completion
+    * curl -X POST -d "robots are good" {}://{}:{}/api/embedding"#,
+        protocol,
+        address,
+        port,
+        protocol,
+        address,
