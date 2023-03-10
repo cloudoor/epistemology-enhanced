@@ -324,3 +324,14 @@ Examples:
             a = a.route("/lit.js", web::get().to(lit));
             a = a.route("/icon.png", web::get().to(icon));
         }
+
+        a
+    });
+
+    if let (Some(key_file), Some(cert_file)) = (&cli.https_key_file, &cli.https_cert_file) {
+        let config = ServerConfig::builder()
+            .with_safe_defaults()
+            .with_no_client_auth();
+
+        // load TLS key/cert files
+        let cert_file = &mut BufReader::new(File::open(cert_file).unwrap());
