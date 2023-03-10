@@ -335,3 +335,14 @@ Examples:
 
         // load TLS key/cert files
         let cert_file = &mut BufReader::new(File::open(cert_file).unwrap());
+        let key_file = &mut BufReader::new(File::open(key_file).unwrap());
+
+        // convert files to key/cert objects
+        let cert_chain: Vec<Certificate> = certs(cert_file)
+            .map(|d| {
+                let der = d.unwrap();
+                Certificate(der.to_vec())
+            })
+            .collect();
+        let mut keys: Vec<PrivateKey> = rsa_private_keys(key_file)
+            .map(|d| {
