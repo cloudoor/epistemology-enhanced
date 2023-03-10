@@ -299,3 +299,19 @@ Examples:
                     .route(web::get().to(handle_completion_get))
                     .route(web::post().to(handle_completion_post)),
             )
+            .service(web::resource("/api/chat").route(web::post().to(handle_chat_post)))
+            .service(web::resource("/api/embedding").route(web::post().to(handle_embedding_post)));
+
+        // let's serve the UI if the user provided a path to a static folder of files
+        if let Some(ui_path) = &cli.ui {
+            a = a.service(
+                actix_files::Files::new(
+                    "/",
+                    match fs::canonicalize(ui_path) {
+                        Ok(full_path) => full_path.display().to_string(),
+                        Err(err) => {
+                            panic!("Failed to serve UI: {}", err)
+                        }
+                    },
+                )
+                .index_file("index.html"),
