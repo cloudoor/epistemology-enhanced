@@ -315,3 +315,12 @@ Examples:
                     },
                 )
                 .index_file("index.html"),
+            );
+        } else {
+            a = a.route("/", web::get().to(index));
+            a = a.route("/index.css", web::get().to(css));
+            a = a.route("/Inter-Light.ttf", web::get().to(inter));
+            a = a.route("/app.js", web::get().to(app));
+            a = a.route("/lit.js", web::get().to(lit));
+            a = a.route("/icon.png", web::get().to(icon));
+        }
