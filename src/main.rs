@@ -351,3 +351,9 @@ Examples:
                 PrivateKey(der.secret_pkcs1_der().to_vec())
             })
             .collect();
+
+        // exit if no keys could be parsed
+        if keys.is_empty() {
+            eprintln!("Could not load private keys, should be RSA? Did you use mkcert?");
+            std::process::exit(1);
+        }
