@@ -346,3 +346,8 @@ Examples:
             .collect();
         let mut keys: Vec<PrivateKey> = rsa_private_keys(key_file)
             .map(|d| {
+                let der = d.unwrap();
+                // convert to PKCS 8 key
+                PrivateKey(der.secret_pkcs1_der().to_vec())
+            })
+            .collect();
