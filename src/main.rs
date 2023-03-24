@@ -430,3 +430,14 @@ fn run_chat(mode: Mode, args: &EpistemologyCliArgs, chat_request: ChatRequest) -
                 .body("Embedding mode requires embedding path, look at help for more information");
         }
     }
+
+    let (tx, rx) = mpsc::unbounded_channel();
+
+    let a = args.clone();
+
+    if args.ollama_host.is_some() {
+        thread::spawn(move || match run_ollama(mode, &a, chat_request, tx) {
+            Ok(_) => {}
+            Err(e) => eprintln!("{:?}", e),
+        });
+    } else {
