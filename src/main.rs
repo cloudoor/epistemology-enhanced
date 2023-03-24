@@ -418,3 +418,15 @@ fn run_streaming_llm(mode: Mode, args: &EpistemologyCliArgs, prompt: String) -> 
         .map(|line| Ok::<_, actix_web::Error>(web::Bytes::from(line)));
 
     HttpResponse::Ok()
+        .content_type("text/plain")
+        .streaming(async_stream)
+}
+
+fn run_chat(mode: Mode, args: &EpistemologyCliArgs, chat_request: ChatRequest) -> impl Responder {
+    if let Mode::Embedding = mode {
+        if args.embedding_path.is_none() {
+            return HttpResponse::BadRequest()
+                .content_type("text/plain")
+                .body("Embedding mode requires embedding path, look at help for more information");
+        }
+    }
