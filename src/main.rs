@@ -357,3 +357,10 @@ Examples:
             eprintln!("Could not load private keys, should be RSA? Did you use mkcert?");
             std::process::exit(1);
         }
+
+        let sc = config.with_single_cert(cert_chain, keys.remove(0)).unwrap();
+
+        s.bind_rustls(format!("{}:{}", address, port), sc)?
+            .run()
+            .await
+    } else {
