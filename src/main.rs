@@ -364,3 +364,14 @@ Examples:
             .run()
             .await
     } else {
+        let cert = rcgen::generate_simple_self_signed(vec![address.to_owned()]).unwrap();
+        let cert_file = cert.serialize_der().unwrap();
+        let key_file = cert.serialize_private_key_der();
+        let pk = PrivateKey(key_file);
+
+        let cert_chain = Certificate(cert_file);
+        let config = ServerConfig::builder()
+            .with_safe_defaults()
+            .with_no_client_auth();
+
+        let sc: rustls::ServerConfig = config.with_single_cert(vec![cert_chain], pk).unwrap();
