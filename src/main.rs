@@ -403,3 +403,9 @@ fn run_streaming_llm(mode: Mode, args: &EpistemologyCliArgs, prompt: String) -> 
 
     if args.ollama_host.is_some() {
         return HttpResponse::BadRequest()
+            .content_type("text/plain")
+            .body("Ollama completions not supported");
+    } else {
+        // Spawn a thread to execute the command and send output to the channel
+        thread::spawn(move || match run_llama_cli(mode, &a, prompt, tx) {
+            Ok(_) => {}
