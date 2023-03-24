@@ -385,3 +385,12 @@ Examples:
 enum Mode {
     Chat,
     Completion,
+    Embedding,
+}
+
+fn run_streaming_llm(mode: Mode, args: &EpistemologyCliArgs, prompt: String) -> impl Responder {
+    if let Mode::Embedding = mode {
+        if args.embedding_path.is_none() {
+            return HttpResponse::BadRequest()
+                .content_type("text/plain")
+                .body("Embedding mode requires embedding path, look at help for more information");
