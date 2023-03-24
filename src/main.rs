@@ -375,3 +375,13 @@ Examples:
             .with_no_client_auth();
 
         let sc: rustls::ServerConfig = config.with_single_cert(vec![cert_chain], pk).unwrap();
+        s.bind_rustls(format!("{}:{}", address, port), sc)?
+            .run()
+            .await
+    }
+}
+
+#[derive(PartialEq)]
+enum Mode {
+    Chat,
+    Completion,
