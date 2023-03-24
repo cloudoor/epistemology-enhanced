@@ -441,3 +441,15 @@ fn run_chat(mode: Mode, args: &EpistemologyCliArgs, chat_request: ChatRequest) -
             Err(e) => eprintln!("{:?}", e),
         });
     } else {
+        return HttpResponse::BadRequest()
+            .content_type("text/plain")
+            .body("Chat mode not supported by llama.cpp");
+    }
+
+    // Convert the synchronous Flume receiver into an asynchronous stream
+    let async_stream = UnboundedReceiverStream::from(rx)
+        .map(|line| Ok::<_, actix_web::Error>(web::Bytes::from(line)));
+
+    HttpResponse::Ok()
+        .content_type("text/plain")
+        .streaming(async_stream)
