@@ -394,3 +394,12 @@ fn run_streaming_llm(mode: Mode, args: &EpistemologyCliArgs, prompt: String) -> 
             return HttpResponse::BadRequest()
                 .content_type("text/plain")
                 .body("Embedding mode requires embedding path, look at help for more information");
+        }
+    }
+
+    let (tx, rx) = mpsc::unbounded_channel();
+
+    let a = args.clone();
+
+    if args.ollama_host.is_some() {
+        return HttpResponse::BadRequest()
