@@ -409,3 +409,12 @@ fn run_streaming_llm(mode: Mode, args: &EpistemologyCliArgs, prompt: String) -> 
         // Spawn a thread to execute the command and send output to the channel
         thread::spawn(move || match run_llama_cli(mode, &a, prompt, tx) {
             Ok(_) => {}
+            Err(_) => eprintln!("Something went wrong while executing the llama.cpp exe"),
+        });
+    }
+
+    // Convert the synchronous Flume receiver into an asynchronous stream
+    let async_stream = UnboundedReceiverStream::from(rx)
+        .map(|line| Ok::<_, actix_web::Error>(web::Bytes::from(line)));
+
+    HttpResponse::Ok()
