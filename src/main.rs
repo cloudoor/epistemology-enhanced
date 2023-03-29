@@ -453,3 +453,11 @@ fn run_chat(mode: Mode, args: &EpistemologyCliArgs, chat_request: ChatRequest) -
     HttpResponse::Ok()
         .content_type("text/plain")
         .streaming(async_stream)
+}
+
+fn run_ollama(
+    mode: Mode,
+    args: &EpistemologyCliArgs,
+    chat_request: ChatRequest,
+    sender: mpsc::UnboundedSender<String>,
+) -> Result<()> {
