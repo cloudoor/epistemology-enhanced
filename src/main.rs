@@ -461,3 +461,9 @@ fn run_ollama(
     chat_request: ChatRequest,
     sender: mpsc::UnboundedSender<String>,
 ) -> Result<()> {
+    let messages = chat_request.messages;
+    if mode != Mode::Chat {
+        return Err(anyhow::anyhow!("Ollama only supports chat mode"));
+    }
+    let host = match &args.ollama_host {
+        Some(h) => h,
