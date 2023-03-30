@@ -505,3 +505,12 @@ fn run_ollama(
 fn run_llama_cli(
     mode: Mode,
     args: &EpistemologyCliArgs,
+    prompt: String,
+    sender: mpsc::UnboundedSender<String>,
+) -> Result<()> {
+    let full_model_path = match fs::canonicalize(&args.model) {
+        Ok(full_path) => full_path.display().to_string(),
+        Err(err) => panic!("Failed to execute AI: {}", err),
+    };
+
+    let n_predict = args.n_predict.unwrap_or(-1).to_string();
