@@ -521,3 +521,15 @@ fn run_llama_cli(
         n_predict,
         "--log-disable".to_string(),
     ];
+
+    let full_grammar_path;
+    if let Some(grammar) = &args.grammar {
+        full_grammar_path = match fs::canonicalize(grammar) {
+            Ok(full_path) => full_path.display().to_string(),
+            Err(err) => panic!("Failed to execute AI: {}", err),
+        };
+        vec_cmd.push("--grammar-file".to_string());
+        vec_cmd.push(full_grammar_path);
+    }
+
+    if let Some(json_schema) = &args.json_schema {
