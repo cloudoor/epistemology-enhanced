@@ -494,3 +494,14 @@ fn run_ollama(
         .map_err(|e| anyhow::anyhow!("Failed to send request: {}", e))?;
 
     let body = response
+        .json::<OlamaResponse>()
+        .map_err(|e| anyhow::anyhow!("Failed to get response body: {}", e))?;
+
+    sender.send(serde_json::to_string(&body.message).unwrap())?;
+
+    Ok(())
+}
+
+fn run_llama_cli(
+    mode: Mode,
+    args: &EpistemologyCliArgs,
