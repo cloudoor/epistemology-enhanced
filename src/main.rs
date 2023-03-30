@@ -467,3 +467,11 @@ fn run_ollama(
     }
     let host = match &args.ollama_host {
         Some(h) => h,
+        None => return Err(anyhow::anyhow!("Ollama host is required")),
+    };
+
+    let model = args.model.to_str();
+
+    let model = match model {
+        Some(m) => m,
+        None => return Err(anyhow::anyhow!("Model path is invalid")),
