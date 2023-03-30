@@ -514,3 +514,10 @@ fn run_llama_cli(
     };
 
     let n_predict = args.n_predict.unwrap_or(-1).to_string();
+    let mut vec_cmd: Vec<String> = vec![
+        "-m".to_string(),
+        full_model_path.to_string(),
+        "-n".to_string(),
+        n_predict,
+        "--log-disable".to_string(),
+    ];
