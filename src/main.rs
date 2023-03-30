@@ -475,3 +475,13 @@ fn run_ollama(
     let model = match model {
         Some(m) => m,
         None => return Err(anyhow::anyhow!("Model path is invalid")),
+    };
+
+    let url = format!("{}/api/chat", host);
+
+    let client = reqwest::blocking::Client::new();
+
+    let data: OlamaRequest = OlamaRequest {
+        model: model.to_string(),
+        messages: messages,
+        stream: false,
