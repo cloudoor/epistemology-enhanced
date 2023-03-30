@@ -533,3 +533,9 @@ fn run_llama_cli(
     }
 
     if let Some(json_schema) = &args.json_schema {
+        let full_json_schema_path = match fs::canonicalize(json_schema) {
+            Ok(full_path) => full_path.display().to_string(),
+            Err(err) => panic!("Failed to execute AI: {}", err),
+        };
+        let json_schema_str = fs::read_to_string(full_json_schema_path)?;
+        let g = Grammar::from_json_schema(&json_schema_str);
