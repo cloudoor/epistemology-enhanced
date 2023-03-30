@@ -485,3 +485,12 @@ fn run_ollama(
         model: model.to_string(),
         messages: messages,
         stream: false,
+    };
+
+    let response = client
+        .post(&url)
+        .json(&data)
+        .send()
+        .map_err(|e| anyhow::anyhow!("Failed to send request: {}", e))?;
+
+    let body = response
