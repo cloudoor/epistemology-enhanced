@@ -553,3 +553,11 @@ fn run_llama_cli(
     }
 
     if let Some(context_length) = &args.ctx_size {
+        vec_cmd.push("-c".to_string());
+        vec_cmd.push(context_length.to_string());
+    }
+
+    if let Some(threads) = &args.threads {
+        vec_cmd.push("-t".to_string());
+        vec_cmd.push(threads.to_string());
+    }
