@@ -573,3 +573,11 @@ fn run_llama_cli(
             Some(path) => path,
             None => {
                 return Err(anyhow::anyhow!(
+                    "LLM CPP main executable path is required for completion mode"
+                ))
+            }
+        },
+        Mode::Embedding => match args.embedding_path.clone() {
+            Some(path) => path,
+            None => {
+                return Err(anyhow::anyhow!(
