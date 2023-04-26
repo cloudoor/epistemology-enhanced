@@ -546,3 +546,10 @@ fn run_llama_cli(
         vec_cmd.push("--grammar".to_string());
         vec_cmd.push(g_str.to_string());
     }
+
+    if let Some(num_layers) = &args.n_gpu_layers {
+        vec_cmd.push("-ngl".to_string());
+        vec_cmd.push(num_layers.to_string());
+    }
+
+    if let Some(context_length) = &args.ctx_size {
