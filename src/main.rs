@@ -561,3 +561,15 @@ fn run_llama_cli(
         vec_cmd.push("-t".to_string());
         vec_cmd.push(threads.to_string());
     }
+
+    println!("Running LLM: {} ...", &vec_cmd.join(" "));
+
+    // don't show prompt in commandline
+    vec_cmd.push("-p".to_string());
+    vec_cmd.push(prompt.clone());
+
+    let mut child = Command::new(match mode {
+        Mode::Completion => match args.exe_path.clone() {
+            Some(path) => path,
+            None => {
+                return Err(anyhow::anyhow!(
