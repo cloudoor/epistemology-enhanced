@@ -591,3 +591,11 @@ fn run_llama_cli(
     .stdout(Stdio::piped())
     .spawn()
     .expect("failed to execute child");
+
+    let child_stdout = BufReader::new(match child.stdout.take() {
+        Some(stdout) => stdout,
+        None => return Err(anyhow::anyhow!("Failed to get child stdout")),
+    });
+    const BUFFER_SIZE: usize = 1; // Set to 1 for reading one byte at a time
+
+    let mut reader = BufReader::with_capacity(BUFFER_SIZE, child_stdout);
