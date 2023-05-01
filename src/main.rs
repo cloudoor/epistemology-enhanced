@@ -581,3 +581,13 @@ fn run_llama_cli(
             Some(path) => path,
             None => {
                 return Err(anyhow::anyhow!(
+                    "Embedding path is required for embedding mode"
+                ))
+            }
+        },
+        Mode::Chat => return Err(anyhow::anyhow!("Chat mode is not supported by llama.cpp")),
+    })
+    .args(&vec_cmd)
+    .stdout(Stdio::piped())
+    .spawn()
+    .expect("failed to execute child");
