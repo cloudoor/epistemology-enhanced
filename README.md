@@ -1,1 +1,1 @@
-<p align="center"><img wi
+<p align="center"><img width="300"
