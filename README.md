@@ -1,1 +1,1 @@
-<p alig
+<p align="c
