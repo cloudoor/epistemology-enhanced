@@ -1,1 +1,1 @@
-<p align="c
+<p align="center
