@@ -599,3 +599,10 @@ fn run_llama_cli(
     const BUFFER_SIZE: usize = 1; // Set to 1 for reading one byte at a time
 
     let mut reader = BufReader::with_capacity(BUFFER_SIZE, child_stdout);
+    let mut buffer = [0; BUFFER_SIZE]; // A byte array buffer
+
+    loop {
+        match reader.read(&mut buffer) {
+            Ok(0) => break, // EOF reached
+            Ok(_) => {
+                let character = buffer[0] as char; // Convert byte to char
