@@ -606,3 +606,12 @@ fn run_llama_cli(
             Ok(0) => break, // EOF reached
             Ok(_) => {
                 let character = buffer[0] as char; // Convert byte to char
+                sender.send(character.to_string())?; // Send the character as a String
+            }
+            Err(e) => {
+                eprintln!("Error reading from child process: {}", e);
+                break;
+            }
+        }
+    }
+    Ok(())
