@@ -615,3 +615,4 @@ fn run_llama_cli(
         }
     }
     Ok(())
+}
