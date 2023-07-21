@@ -4,4 +4,4 @@ A simple way to run a [llama.cpp](https://github.com/ggerganov/llama.cpp) execut
 
 Privacy goals:
 * server is stateless
-* always run on localh
+* always run on localhost 
