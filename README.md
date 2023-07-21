@@ -3,4 +3,5 @@
 A simple way to run a [llama.cpp](https://github.com/ggerganov/llama.cpp) executable via a local private HTTP API for completions and embeddings.
 
 Privacy goals:
-* server is state
+* server is stateless
+* alwa
