@@ -6,4 +6,4 @@ Privacy goals:
 * server is stateless
 * always run on localhost only
 * never write logs
-* never pu
+* never put promp
