@@ -7,4 +7,4 @@ Privacy goals:
 * always run on localhost only
 * never write logs
 * never put prompts in console logs
-* **MIT** license so you can modify this to your specific 
+* **MIT** license so you can modify this to your specific needs at whim
