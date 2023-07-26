@@ -9,4 +9,4 @@ Privacy goals:
 * never put prompts in console logs
 * **MIT** license so you can modify this to your specific needs at whim
 
-The
+The goal of t
