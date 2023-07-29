@@ -9,4 +9,4 @@ Privacy goals:
 * never put prompts in console logs
 * **MIT** license so you can modify this to your specific needs at whim
 
-The goal of this project is to make 
+The goal of this project is to make a comple
