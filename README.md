@@ -13,4 +13,4 @@ The goal of this project is to make a completely clear and visible way to run a 
 
 You can install by grabbing binaries for all operating systems from [Releases](https://github.com/cloudoor/epistemology-enhanced/releases)
 
-or if you have [rust](https://ru
+or if you have [rust](https://rustup.rs/) in
