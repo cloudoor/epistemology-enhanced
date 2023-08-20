@@ -16,4 +16,4 @@ You can install by grabbing binaries for all operating systems from [Releases](h
 or if you have [rust](https://rustup.rs/) installed:
 
 ```
-carg
+cargo install epist
