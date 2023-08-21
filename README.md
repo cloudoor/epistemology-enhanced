@@ -19,4 +19,4 @@ or if you have [rust](https://rustup.rs/) installed:
 cargo install epistemology-enhanced
 ```
 
-<img width="1
+<img width="1056" al
