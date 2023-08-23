@@ -19,4 +19,4 @@ or if you have [rust](https://rustup.rs/) installed:
 cargo install epistemology-enhanced
 ```
 
-<img width="1056" alt="Screenshot 2024-01-07 at 
+<img width="1056" alt="Screenshot 2024-01-07 at 12 04 1
