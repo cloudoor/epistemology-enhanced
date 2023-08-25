@@ -19,4 +19,4 @@ or if you have [rust](https://rustup.rs/) installed:
 cargo install epistemology-enhanced
 ```
 
-<img width="1056" alt="Screenshot 2024-01-07 at 12 04 16 AM" src="https://github.com/cloudoor/epis
+<img width="1056" alt="Screenshot 2024-01-07 at 12 04 16 AM" src="https://github.com/cloudoor/epistemolog
