@@ -23,4 +23,5 @@ cargo install epistemology-enhanced
 <img width="807" alt="Screenshot 2024-01-28 at 9 24 47 AM" src="https://github.com/cloudoor/epistemology-enhanced/assets/294042/069515da-9a9b-4252-b40a-52ed459850f2">
 
 
-examp
+example:
+```bash
