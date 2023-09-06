@@ -25,4 +25,4 @@ cargo install epistemology-enhanced
 
 example:
 ```bash
-epistemology-enhanced -m .
+epistemology-enhanced -m ../llam
