@@ -27,4 +27,4 @@ example:
 ```bash
 epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding
 
-Serving UI on htt
+Serving UI on https://localh
