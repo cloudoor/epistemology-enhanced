@@ -35,4 +35,4 @@ Examples:
     * curl -X POST -d "robots are good" https://localhost:8080/api/embedding
 ```
 
-You can also ru
+You can also run your o
