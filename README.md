@@ -37,4 +37,5 @@ Examples:
 
 You can also run your own web interface from a static path
 
-`
+```bash
+e
