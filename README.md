@@ -38,4 +38,4 @@ Examples:
 You can also run your own web interface from a static path
 
 ```bash
-epistemology-enhanced -m ../llama.cpp/
+epistemology-enhanced -m ../llama.cpp/phi-2.Q2_
