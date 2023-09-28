@@ -38,4 +38,6 @@ Examples:
 You can also run your own web interface from a static path
 
 ```bash
-epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding -u ./my-web-interfac
+epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding -u ./my-web-interface
+
+Serving UI 
