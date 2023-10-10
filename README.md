@@ -44,4 +44,4 @@ Serving UI on https://localhost:8080/ from ./my-web-interface
 Listening with GET and POST on https://localhost:8080/api/completion
 Examples:
     * https://localhost:8080/api/completion?prompt=famous%20qoute:
-    * curl -X POST -d 
+    * curl -X POST -d "famous
