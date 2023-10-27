@@ -48,4 +48,7 @@ Examples:
     * curl -X POST -d "robots are good" https://localhost:8080/api/embedding
 ```
 
-You can also constrain the output grammar with *.gbnf files for things like JSON outpu
+You can also constrain the output grammar with *.gbnf files for things like JSON output
+
+```bash
+e
