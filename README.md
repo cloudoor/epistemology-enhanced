@@ -51,4 +51,4 @@ Examples:
 You can also constrain the output grammar with *.gbnf files for things like JSON output
 
 ```bash
-epistemology-enhanced -m ../l
+epistemology-enhanced -m ../llama.cp
