@@ -52,3 +52,5 @@ You can also constrain the output grammar with *.gbnf files for things like JSON
 
 ```bash
 epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding -g ./json.gbnf
+
+Serving 
