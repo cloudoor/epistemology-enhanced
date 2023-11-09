@@ -54,4 +54,4 @@ You can also constrain the output grammar with *.gbnf files for things like JSON
 epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding -g ./json.gbnf
 
 Serving UI on https://localhost:8080/ from built-in UI
-Listening with GET and POST on https://localhost:8080
+Listening with GET and POST on https://localhost:8080/completi
