@@ -57,4 +57,4 @@ Serving UI on https://localhost:8080/ from built-in UI
 Listening with GET and POST on https://localhost:8080/completion
 Examples:
     * https://localhost:8080/api/completion?prompt=famous%20qoute:
-    * curl -X POST -d "famous
+    * curl -X POST -d "famous quote:" https
