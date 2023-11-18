@@ -58,4 +58,4 @@ Listening with GET and POST on https://localhost:8080/completion
 Examples:
     * https://localhost:8080/api/completion?prompt=famous%20qoute:
     * curl -X POST -d "famous quote:" https://localhost:8080/api/completion
-    * curl -X POST -d "robots are good" ht
+    * curl -X POST -d "robots are good" https:/
