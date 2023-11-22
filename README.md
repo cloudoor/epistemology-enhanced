@@ -61,4 +61,6 @@ Examples:
     * curl -X POST -d "robots are good" https://localhost:8080/api/embedding
 ```
 
-# Constraining to JSON Sc
+# Constraining to JSON Schema
+
+Constra
