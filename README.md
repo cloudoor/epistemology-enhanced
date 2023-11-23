@@ -63,4 +63,4 @@ Examples:
 
 # Constraining to JSON Schema
 
-Constra
+Constraining AI
