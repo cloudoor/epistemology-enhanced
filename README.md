@@ -63,4 +63,4 @@ Examples:
 
 # Constraining to JSON Schema
 
-Constraining AI output to structured data can make
+Constraining AI output to structured data can make it much 
