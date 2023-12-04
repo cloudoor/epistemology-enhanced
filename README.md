@@ -63,4 +63,4 @@ Examples:
 
 # Constraining to JSON Schema
 
-Constraining AI output to structured data can make it much more useful for programatic usage. This project uses a sister project [GBNF-rs](https://github.com/cloudoor/gbnf) for using JSON schema 
+Constraining AI output to structured data can make it much more useful for programatic usage. This project uses a sister project [GBNF-rs](https://github.com/cloudoor/gbnf) for using JSON schema file
