@@ -67,4 +67,5 @@ Constraining AI output to structured data can make it much more useful for progr
 
 Let's assume you have a file called "schema.json" that has JSON schema inside it
 
-```j
+```json
+{
