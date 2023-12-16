@@ -71,4 +71,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/product.schema.json",
-  "t
+  "title": "
