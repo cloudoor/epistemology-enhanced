@@ -73,3 +73,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
   "$id": "https://example.com/product.schema.json",
   "title": "Product",
   "description": "Famouse quote and person generator",
+  "type": "
