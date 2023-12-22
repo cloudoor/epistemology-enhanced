@@ -74,4 +74,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
   "title": "Product",
   "description": "Famouse quote and person generator",
   "type": "object",
-  
+  "properti
