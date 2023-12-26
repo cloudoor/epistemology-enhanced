@@ -76,4 +76,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
   "type": "object",
   "properties": {
     "quote": {
-      "description": "A famous quote most
+      "description": "A famous quote most people would k
