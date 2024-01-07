@@ -85,4 +85,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
     },
     "lastName": {
       "description": "The authors's last name.",
-      "type": "s
+      "type": "string"
