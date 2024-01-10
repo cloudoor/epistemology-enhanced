@@ -88,4 +88,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
       "type": "string"
     },
     "age": {
-      "description": "Age in years which mus
+      "description": "Age in years which must be equ
