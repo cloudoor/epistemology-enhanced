@@ -96,4 +96,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
 ```
 
 ```bash
-epistemology-enhanced -m ../llama
+epistemology-enhanced -m ../llama.cpp
