@@ -98,3 +98,5 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
 ```bash
 epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding -j ./my-schema.json
 ```
+
+We ca
