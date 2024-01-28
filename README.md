@@ -99,4 +99,4 @@ Let's assume you have a file called "schema.json" that has JSON schema inside it
 epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ../llama.cpp/embedding -j ./my-schema.json
 ```
 
-We can now ask the AI questions and now get answers constrained to our JSON format. Since a lot of metadata is lost during conversion to an AI grammar, we should re-iterate in th
+We can now ask the AI questions and now get answers constrained to our JSON format. Since a lot of metadata is lost during conversion to an AI grammar, we should re-iterate in the system pro
