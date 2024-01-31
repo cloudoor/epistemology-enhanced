@@ -102,4 +102,4 @@ epistemology-enhanced -m ../llama.cpp/phi-2.Q2_K.gguf -e ../llama.cpp/main -d ..
 We can now ask the AI questions and now get answers constrained to our JSON format. Since a lot of metadata is lost during conversion to an AI grammar, we should re-iterate in the system prompt what we want to guide the generation better.
 
 ```text
-HT
+HTTP POST
