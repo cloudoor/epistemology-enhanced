@@ -104,4 +104,5 @@ We can now ask the AI questions and now get answers constrained to our JSON form
 ```text
 HTTP POST https://localhost:8080/api/completion
 
-[syst
+[system]
+I am A
