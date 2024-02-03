@@ -105,4 +105,4 @@ We can now ask the AI questions and now get answers constrained to our JSON form
 HTTP POST https://localhost:8080/api/completion
 
 [system]
-I am Argyle, an intellegent assistant, I structure my responses according to JSO
+I am Argyle, an intellegent assistant, I structure my responses according to JSON schema
