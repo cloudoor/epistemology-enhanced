@@ -106,3 +106,6 @@ HTTP POST https://localhost:8080/api/completion
 
 [system]
 I am Argyle, an intellegent assistant, I structure my responses according to JSON schema
+
+{
+  
