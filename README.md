@@ -110,4 +110,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/product.schema.json",
-  "
+  "title":
