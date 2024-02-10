@@ -113,4 +113,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
   "title": "Product",
   "description": "Famouse quote and person generator",
   "type": "object",
-  "p
+  "propertie
