@@ -112,4 +112,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
   "$id": "https://example.com/product.schema.json",
   "title": "Product",
   "description": "Famouse quote and person generator",
-  "t
+  "type": "objec
