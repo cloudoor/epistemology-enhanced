@@ -114,3 +114,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
   "description": "Famouse quote and person generator",
   "type": "object",
   "properties": {
+    "qu
