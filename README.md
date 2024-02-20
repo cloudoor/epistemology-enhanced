@@ -115,4 +115,5 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
   "type": "object",
   "properties": {
     "quote": {
-      "description": "A famous quote most people would know from the auth
+      "description": "A famous quote most people would know from the author's book",
+ 
