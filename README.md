@@ -118,4 +118,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
       "description": "A famous quote most people would know from the author's book",
       "type": "string"
     },
-    "firstNa
+    "firstName": {
