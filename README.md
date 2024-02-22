@@ -119,4 +119,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
       "type": "string"
     },
     "firstName": {
-      "description":
+      "description": "The autho
