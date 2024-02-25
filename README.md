@@ -122,4 +122,5 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
       "description": "The authors's first name.",
       "type": "string"
     },
-    "lastName":
+    "lastName": {
+     
