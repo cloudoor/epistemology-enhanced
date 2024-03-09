@@ -128,4 +128,6 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
     },
     "age": {
       "description": "Age in years which must be equal to or greater than zero.",
-      "type": "numbe
+      "type": "number"
+    }
+  }
