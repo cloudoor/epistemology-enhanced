@@ -133,3 +133,4 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
   }
 }
 [me]user
+Genera
