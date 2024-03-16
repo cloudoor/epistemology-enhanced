@@ -134,4 +134,6 @@ I am Argyle, an intellegent assistant, I structure my responses according to JSO
 }
 [me]user
 Generate me a famous quote?
-[assi
+[assistant] 
+```
+
