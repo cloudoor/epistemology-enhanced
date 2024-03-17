@@ -141,4 +141,4 @@ Output
 
 ```json
 { 
-  "quote" : "The sky above the port was the
+  "quote" : "The sky above the port was the col
