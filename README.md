@@ -150,4 +150,4 @@ Output
 
 ## Advanced: How do I make things go faster
 
-The main three knobs to pla
+The main three knobs to play with are nu
