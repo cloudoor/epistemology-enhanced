@@ -150,4 +150,4 @@ Output
 
 ## Advanced: How do I make things go faster
 
-The main three knobs to play with are number of layers offloaded to GPU, number of t
+The main three knobs to play with are number of layers offloaded to GPU, number of threads, an
