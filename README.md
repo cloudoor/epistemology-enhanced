@@ -156,4 +156,4 @@ The main three knobs to play with are number of layers offloaded to GPU, number 
 epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe -l 35 -t 16 -c 50000
 ```
 
-## Advanced: Why am I seeing this error ab
+## Advanced: Why am I seeing this error about invalid
