@@ -158,4 +158,7 @@ epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe -l 35 -t 16 -c 50000
 
 ## Advanced: Why am I seeing this error about invalid certificates?
 
-Epistemology always uses a randomly generated HTTPS for secure communication, by default it autogenerates a certificate which is not registered with your machine. If you want this message to go away, you will have to create your own certificate and add it to your machine's approved list of certificates. Then run epistemology li
+Epistemology always uses a randomly generated HTTPS for secure communication, by default it autogenerates a certificate which is not registered with your machine. If you want this message to go away, you will have to create your own certificate and add it to your machine's approved list of certificates. Then run epistemology like.
+
+```
+e
