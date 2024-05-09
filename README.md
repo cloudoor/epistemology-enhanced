@@ -162,4 +162,7 @@ Epistemology always uses a randomly generated HTTPS for secure communication, by
 
 ```
 epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.pem --http-cert-file cert.pem
-`
+```
+
+
+## Adv
