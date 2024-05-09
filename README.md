@@ -161,4 +161,5 @@ epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe -l 35 -t 16 -c 50000
 Epistemology always uses a randomly generated HTTPS for secure communication, by default it autogenerates a certificate which is not registered with your machine. If you want this message to go away, you will have to create your own certificate and add it to your machine's approved list of certificates. Then run epistemology like.
 
 ```
-epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.pem --http-cert-file cert.p
+epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.pem --http-cert-file cert.pem
+`
