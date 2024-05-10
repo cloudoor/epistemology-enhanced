@@ -165,4 +165,4 @@ epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.
 ```
 
 
-## Advanced: R
+## Advanced: Running Ep
