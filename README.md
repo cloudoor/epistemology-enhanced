@@ -165,4 +165,4 @@ epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.
 ```
 
 
-## Advanced: Running Epistemology on AMD Radeon on Wind
+## Advanced: Running Epistemology on AMD Radeon on Windows with a sp
