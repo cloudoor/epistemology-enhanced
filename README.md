@@ -168,4 +168,4 @@ epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.
 ## Advanced: Running Epistemology on AMD Radeon on Windows with a specific layer count
 
 ```
-$env:GGML_OPENCL_PLATFORM
+$env:GGML_OPENCL_PLATFORM = "AMD"
