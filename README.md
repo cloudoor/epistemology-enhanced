@@ -169,4 +169,4 @@ epistemology-enhanced -m phi2.gguf -e ../llama.cpp/main.exe --http-key-file key.
 
 ```
 $env:GGML_OPENCL_PLATFORM = "AMD"
-$env:GGML_OPENCL_DEVICE = "1" # yo
+$env:GGML_OPENCL_DEVICE = "1" # you can ch
